@@ -9,9 +9,11 @@ using namespace std;
 using namespace std::experimental::filesystem;
 using namespace ProyectoFinal;
 
+
+
 int main() {
 
-	string path = "C:\\Users\\Juan\\Desktop\\UPC\\TercerCiclo\\Algoritmo\\TrabajoFinal\\Algoritmo_Final";
+	string path = "C:\\Users\\Proyecto\\Documents\\New folder\\Test";
 	for (const auto& entry : recursive_directory_iterator(path)) {
 		cout << "- ";
 		cout << entry.path() << std::endl;
