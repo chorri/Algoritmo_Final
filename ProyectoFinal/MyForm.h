@@ -34,8 +34,10 @@ namespace ProyectoFinal {
 				delete components;
 			}
 		}
+	private: System::Windows::Forms::Panel^  ArchivosPnl;
+	protected:
 
-	private: System::Windows::Forms::Panel^  panel1;
+
 	private: System::Windows::Forms::Label^  lblNombre;
 
 
@@ -46,45 +48,112 @@ namespace ProyectoFinal {
 	private: System::Windows::Forms::Label^  label2;
 
 	private: System::Windows::Forms::Label^  label5;
-	private: System::Windows::Forms::Panel^  panel2;
-	private: System::Windows::Forms::ContextMenuStrip^  contextMenuStrip1;
+	private: System::Windows::Forms::Panel^  DatosPnl;
+	private: System::Windows::Forms::MenuStrip^  OpcMSrp;
+
+
+	private: System::Windows::Forms::ToolStripMenuItem^  filtrarToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  inicialNombreToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  aToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^  bToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^  cToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^  dToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^  eToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^  fToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^  gToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^  hToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^  iToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^  jToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^  kToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^  lToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^  mToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^  nToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^  oToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^  pToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^  qToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^  rToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^  sToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^  tToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^  uToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^  vToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^  wToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^  xToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^  yToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^  zToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^  promedioPToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^  quintoSuperiorToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^  tercioSuperiorToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^  reprobadosToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^  deudaPendienteToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  siToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^  noToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^  porMesToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  eneroToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  febreroToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  marzoToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  abrilToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  mayoToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  junioToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  julioToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  agostoToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  septiembreToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  octubreToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  noviembreToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  diciembreToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  ordenarToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  fechaToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  masRecienteAMasAntiguoToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  masAntiguoAMasRecienteToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  nombreToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^  ordenAlfabeticoAcendenteToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  ordenAlfabeticoDescendenteToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  promedioPonderadoToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  mayorNotaAMenorToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  menorNotaAMayorToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  deudaPendienteToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^  mayorDeudaAMenorToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  menorDeudaAMayorToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  pesoToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  mayorPesoAMenorToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^  menorPesoAMayorToolStripMenuItem;
 
 
 
-	private: System::Windows::Forms::ToolStripMenuItem^  nombreToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  promedioPToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  deudaToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  aToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  bToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  cToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  dToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  eToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  fToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  gToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  hToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  iToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  jToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  kToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  lToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  mToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  nToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  oToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  pToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  qToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  rToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  sToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  tToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  uToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  vToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  wToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  xToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  yToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  zToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  quintoSuperiorToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  tercioSuperiorToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  reprobadosToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  siToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^  noToolStripMenuItem;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	private: System::ComponentModel::IContainer^  components;
 	protected:
@@ -102,64 +171,93 @@ namespace ProyectoFinal {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->components = (gcnew System::ComponentModel::Container());
-			this->panel1 = (gcnew System::Windows::Forms::Panel());
+			this->ArchivosPnl = (gcnew System::Windows::Forms::Panel());
 			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->lblNombre = (gcnew System::Windows::Forms::Label());
-			this->panel2 = (gcnew System::Windows::Forms::Panel());
-			this->contextMenuStrip1 = (gcnew System::Windows::Forms::ContextMenuStrip(this->components));
-			this->nombreToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->aToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->bToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->cToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->dToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->eToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->fToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->gToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->hToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->iToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->jToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->kToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->lToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->mToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->nToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->oToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->pToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->qToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->rToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->sToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->tToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->uToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->vToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->wToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->xToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->yToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->zToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->promedioPToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->quintoSuperiorToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->tercioSuperiorToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->reprobadosToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->deudaToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->siToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->noToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->panel1->SuspendLayout();
-			this->contextMenuStrip1->SuspendLayout();
+			this->DatosPnl = (gcnew System::Windows::Forms::Panel());
+			this->OpcMSrp = (gcnew System::Windows::Forms::MenuStrip());
+			this->filtrarToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->inicialNombreToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->aToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->bToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->cToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->dToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->eToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->fToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->gToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->hToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->iToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->jToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->kToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->lToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->mToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->nToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->oToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->pToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->qToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->rToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->sToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->tToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->uToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->vToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->wToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->xToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->yToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->zToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->promedioPToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->quintoSuperiorToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->tercioSuperiorToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->reprobadosToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->deudaPendienteToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->siToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->noToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->porMesToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->eneroToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->febreroToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->marzoToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->abrilToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->mayoToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->junioToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->julioToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->agostoToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->septiembreToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->octubreToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->noviembreToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->diciembreToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->ordenarToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->fechaToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->masRecienteAMasAntiguoToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->masAntiguoAMasRecienteToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->nombreToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->ordenAlfabeticoAcendenteToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->ordenAlfabeticoDescendenteToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->promedioPonderadoToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->mayorNotaAMenorToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->menorNotaAMayorToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->deudaPendienteToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->mayorDeudaAMenorToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->menorDeudaAMayorToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->pesoToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->mayorPesoAMenorToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->menorPesoAMayorToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->ArchivosPnl->SuspendLayout();
+			this->OpcMSrp->SuspendLayout();
 			this->SuspendLayout();
 			// 
-			// panel1
+			// ArchivosPnl
 			// 
-			this->panel1->Controls->Add(this->label5);
-			this->panel1->Controls->Add(this->label4);
-			this->panel1->Controls->Add(this->label3);
-			this->panel1->Controls->Add(this->label2);
-			this->panel1->Controls->Add(this->lblNombre);
-			this->panel1->Location = System::Drawing::Point(24, 80);
-			this->panel1->Name = L"panel1";
-			this->panel1->Size = System::Drawing::Size(623, 430);
-			this->panel1->TabIndex = 1;
+			this->ArchivosPnl->Controls->Add(this->label5);
+			this->ArchivosPnl->Controls->Add(this->label4);
+			this->ArchivosPnl->Controls->Add(this->label3);
+			this->ArchivosPnl->Controls->Add(this->label2);
+			this->ArchivosPnl->Controls->Add(this->lblNombre);
+			this->ArchivosPnl->Location = System::Drawing::Point(24, 27);
+			this->ArchivosPnl->Name = L"ArchivosPnl";
+			this->ArchivosPnl->Size = System::Drawing::Size(623, 483);
+			this->ArchivosPnl->TabIndex = 1;
 			// 
 			// label5
 			// 
@@ -206,261 +304,482 @@ namespace ProyectoFinal {
 			this->lblNombre->TabIndex = 0;
 			this->lblNombre->Text = L"Nombre";
 			// 
-			// panel2
+			// DatosPnl
 			// 
-			this->panel2->Location = System::Drawing::Point(687, 80);
-			this->panel2->Name = L"panel2";
-			this->panel2->Size = System::Drawing::Size(527, 430);
-			this->panel2->TabIndex = 5;
+			this->DatosPnl->Location = System::Drawing::Point(687, 27);
+			this->DatosPnl->Name = L"DatosPnl";
+			this->DatosPnl->Size = System::Drawing::Size(527, 483);
+			this->DatosPnl->TabIndex = 5;
 			// 
-			// contextMenuStrip1
+			// OpcMSrp
 			// 
-			this->contextMenuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(3) {
-				this->nombreToolStripMenuItem,
-					this->promedioPToolStripMenuItem, this->deudaToolStripMenuItem
+			this->OpcMSrp->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
+				this->filtrarToolStripMenuItem,
+					this->ordenarToolStripMenuItem
 			});
-			this->contextMenuStrip1->Name = L"contextMenuStrip1";
-			this->contextMenuStrip1->ShowCheckMargin = true;
-			this->contextMenuStrip1->Size = System::Drawing::Size(162, 70);
+			this->OpcMSrp->Location = System::Drawing::Point(0, 0);
+			this->OpcMSrp->Name = L"OpcMSrp";
+			this->OpcMSrp->Size = System::Drawing::Size(1259, 24);
+			this->OpcMSrp->TabIndex = 6;
+			this->OpcMSrp->Text = L"menuStrip1";
 			// 
-			// nombreToolStripMenuItem
+			// filtrarToolStripMenuItem
 			// 
-			this->nombreToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(26) {
-				this->aToolStripMenuItem,
-					this->bToolStripMenuItem, this->cToolStripMenuItem, this->dToolStripMenuItem, this->eToolStripMenuItem, this->fToolStripMenuItem,
-					this->gToolStripMenuItem, this->hToolStripMenuItem, this->iToolStripMenuItem, this->jToolStripMenuItem, this->kToolStripMenuItem,
-					this->lToolStripMenuItem, this->mToolStripMenuItem, this->nToolStripMenuItem, this->oToolStripMenuItem, this->pToolStripMenuItem,
-					this->qToolStripMenuItem, this->rToolStripMenuItem, this->sToolStripMenuItem, this->tToolStripMenuItem, this->uToolStripMenuItem,
-					this->vToolStripMenuItem, this->wToolStripMenuItem, this->xToolStripMenuItem, this->yToolStripMenuItem, this->zToolStripMenuItem
+			this->filtrarToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(4) {
+				this->inicialNombreToolStripMenuItem,
+					this->promedioPToolStripMenuItem1, this->deudaPendienteToolStripMenuItem, this->porMesToolStripMenuItem
 			});
-			this->nombreToolStripMenuItem->Name = L"nombreToolStripMenuItem";
-			this->nombreToolStripMenuItem->Size = System::Drawing::Size(174, 22);
-			this->nombreToolStripMenuItem->Text = L"Nombre";
+			this->filtrarToolStripMenuItem->Name = L"filtrarToolStripMenuItem";
+			this->filtrarToolStripMenuItem->Size = System::Drawing::Size(49, 20);
+			this->filtrarToolStripMenuItem->Text = L"Filtrar";
 			// 
-			// aToolStripMenuItem
+			// inicialNombreToolStripMenuItem
 			// 
-			this->aToolStripMenuItem->Name = L"aToolStripMenuItem";
-			this->aToolStripMenuItem->Size = System::Drawing::Size(85, 22);
-			this->aToolStripMenuItem->Text = L"A";
-			// 
-			// bToolStripMenuItem
-			// 
-			this->bToolStripMenuItem->Name = L"bToolStripMenuItem";
-			this->bToolStripMenuItem->Size = System::Drawing::Size(85, 22);
-			this->bToolStripMenuItem->Text = L"B";
-			// 
-			// cToolStripMenuItem
-			// 
-			this->cToolStripMenuItem->Name = L"cToolStripMenuItem";
-			this->cToolStripMenuItem->Size = System::Drawing::Size(85, 22);
-			this->cToolStripMenuItem->Text = L"C";
-			// 
-			// dToolStripMenuItem
-			// 
-			this->dToolStripMenuItem->Name = L"dToolStripMenuItem";
-			this->dToolStripMenuItem->Size = System::Drawing::Size(85, 22);
-			this->dToolStripMenuItem->Text = L"D";
-			// 
-			// eToolStripMenuItem
-			// 
-			this->eToolStripMenuItem->Name = L"eToolStripMenuItem";
-			this->eToolStripMenuItem->Size = System::Drawing::Size(85, 22);
-			this->eToolStripMenuItem->Text = L"E";
-			// 
-			// fToolStripMenuItem
-			// 
-			this->fToolStripMenuItem->Name = L"fToolStripMenuItem";
-			this->fToolStripMenuItem->Size = System::Drawing::Size(85, 22);
-			this->fToolStripMenuItem->Text = L"F";
-			// 
-			// gToolStripMenuItem
-			// 
-			this->gToolStripMenuItem->Name = L"gToolStripMenuItem";
-			this->gToolStripMenuItem->Size = System::Drawing::Size(85, 22);
-			this->gToolStripMenuItem->Text = L"G";
-			// 
-			// hToolStripMenuItem
-			// 
-			this->hToolStripMenuItem->Name = L"hToolStripMenuItem";
-			this->hToolStripMenuItem->Size = System::Drawing::Size(85, 22);
-			this->hToolStripMenuItem->Text = L"H";
-			// 
-			// iToolStripMenuItem
-			// 
-			this->iToolStripMenuItem->Name = L"iToolStripMenuItem";
-			this->iToolStripMenuItem->Size = System::Drawing::Size(85, 22);
-			this->iToolStripMenuItem->Text = L"I";
-			// 
-			// jToolStripMenuItem
-			// 
-			this->jToolStripMenuItem->Name = L"jToolStripMenuItem";
-			this->jToolStripMenuItem->Size = System::Drawing::Size(85, 22);
-			this->jToolStripMenuItem->Text = L"J";
-			// 
-			// kToolStripMenuItem
-			// 
-			this->kToolStripMenuItem->Name = L"kToolStripMenuItem";
-			this->kToolStripMenuItem->Size = System::Drawing::Size(85, 22);
-			this->kToolStripMenuItem->Text = L"K";
-			// 
-			// lToolStripMenuItem
-			// 
-			this->lToolStripMenuItem->Name = L"lToolStripMenuItem";
-			this->lToolStripMenuItem->Size = System::Drawing::Size(85, 22);
-			this->lToolStripMenuItem->Text = L"L";
-			// 
-			// mToolStripMenuItem
-			// 
-			this->mToolStripMenuItem->Name = L"mToolStripMenuItem";
-			this->mToolStripMenuItem->Size = System::Drawing::Size(85, 22);
-			this->mToolStripMenuItem->Text = L"M";
-			// 
-			// nToolStripMenuItem
-			// 
-			this->nToolStripMenuItem->Name = L"nToolStripMenuItem";
-			this->nToolStripMenuItem->Size = System::Drawing::Size(85, 22);
-			this->nToolStripMenuItem->Text = L"N";
-			// 
-			// oToolStripMenuItem
-			// 
-			this->oToolStripMenuItem->Name = L"oToolStripMenuItem";
-			this->oToolStripMenuItem->Size = System::Drawing::Size(85, 22);
-			this->oToolStripMenuItem->Text = L"O";
-			// 
-			// pToolStripMenuItem
-			// 
-			this->pToolStripMenuItem->Name = L"pToolStripMenuItem";
-			this->pToolStripMenuItem->Size = System::Drawing::Size(85, 22);
-			this->pToolStripMenuItem->Text = L"P";
-			// 
-			// qToolStripMenuItem
-			// 
-			this->qToolStripMenuItem->Name = L"qToolStripMenuItem";
-			this->qToolStripMenuItem->Size = System::Drawing::Size(85, 22);
-			this->qToolStripMenuItem->Text = L"Q";
-			// 
-			// rToolStripMenuItem
-			// 
-			this->rToolStripMenuItem->Name = L"rToolStripMenuItem";
-			this->rToolStripMenuItem->Size = System::Drawing::Size(85, 22);
-			this->rToolStripMenuItem->Text = L"R";
-			// 
-			// sToolStripMenuItem
-			// 
-			this->sToolStripMenuItem->Name = L"sToolStripMenuItem";
-			this->sToolStripMenuItem->Size = System::Drawing::Size(85, 22);
-			this->sToolStripMenuItem->Text = L"S";
-			// 
-			// tToolStripMenuItem
-			// 
-			this->tToolStripMenuItem->Name = L"tToolStripMenuItem";
-			this->tToolStripMenuItem->Size = System::Drawing::Size(85, 22);
-			this->tToolStripMenuItem->Text = L"T";
-			// 
-			// uToolStripMenuItem
-			// 
-			this->uToolStripMenuItem->Name = L"uToolStripMenuItem";
-			this->uToolStripMenuItem->Size = System::Drawing::Size(85, 22);
-			this->uToolStripMenuItem->Text = L"U";
-			// 
-			// vToolStripMenuItem
-			// 
-			this->vToolStripMenuItem->Name = L"vToolStripMenuItem";
-			this->vToolStripMenuItem->Size = System::Drawing::Size(85, 22);
-			this->vToolStripMenuItem->Text = L"V";
-			// 
-			// wToolStripMenuItem
-			// 
-			this->wToolStripMenuItem->Name = L"wToolStripMenuItem";
-			this->wToolStripMenuItem->Size = System::Drawing::Size(85, 22);
-			this->wToolStripMenuItem->Text = L"W";
-			// 
-			// xToolStripMenuItem
-			// 
-			this->xToolStripMenuItem->Name = L"xToolStripMenuItem";
-			this->xToolStripMenuItem->Size = System::Drawing::Size(85, 22);
-			this->xToolStripMenuItem->Text = L"X";
-			// 
-			// yToolStripMenuItem
-			// 
-			this->yToolStripMenuItem->Name = L"yToolStripMenuItem";
-			this->yToolStripMenuItem->Size = System::Drawing::Size(85, 22);
-			this->yToolStripMenuItem->Text = L"Y";
-			// 
-			// zToolStripMenuItem
-			// 
-			this->zToolStripMenuItem->Name = L"zToolStripMenuItem";
-			this->zToolStripMenuItem->Size = System::Drawing::Size(85, 22);
-			this->zToolStripMenuItem->Text = L"Z";
-			// 
-			// promedioPToolStripMenuItem
-			// 
-			this->promedioPToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(3) {
-				this->quintoSuperiorToolStripMenuItem,
-					this->tercioSuperiorToolStripMenuItem, this->reprobadosToolStripMenuItem
+			this->inicialNombreToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(26) {
+				this->aToolStripMenuItem1,
+					this->bToolStripMenuItem1, this->cToolStripMenuItem1, this->dToolStripMenuItem1, this->eToolStripMenuItem1, this->fToolStripMenuItem1,
+					this->gToolStripMenuItem1, this->hToolStripMenuItem1, this->iToolStripMenuItem1, this->jToolStripMenuItem1, this->kToolStripMenuItem1,
+					this->lToolStripMenuItem1, this->mToolStripMenuItem1, this->nToolStripMenuItem1, this->oToolStripMenuItem1, this->pToolStripMenuItem1,
+					this->qToolStripMenuItem1, this->rToolStripMenuItem1, this->sToolStripMenuItem1, this->tToolStripMenuItem1, this->uToolStripMenuItem1,
+					this->vToolStripMenuItem1, this->wToolStripMenuItem1, this->xToolStripMenuItem1, this->yToolStripMenuItem1, this->zToolStripMenuItem1
 			});
-			this->promedioPToolStripMenuItem->Name = L"promedioPToolStripMenuItem";
-			this->promedioPToolStripMenuItem->Size = System::Drawing::Size(174, 22);
-			this->promedioPToolStripMenuItem->Text = L"Promedio P.";
+			this->inicialNombreToolStripMenuItem->Name = L"inicialNombreToolStripMenuItem";
+			this->inicialNombreToolStripMenuItem->Size = System::Drawing::Size(164, 22);
+			this->inicialNombreToolStripMenuItem->Text = L"Inicial Nombre";
 			// 
-			// quintoSuperiorToolStripMenuItem
+			// aToolStripMenuItem1
 			// 
-			this->quintoSuperiorToolStripMenuItem->Name = L"quintoSuperiorToolStripMenuItem";
-			this->quintoSuperiorToolStripMenuItem->Size = System::Drawing::Size(157, 22);
-			this->quintoSuperiorToolStripMenuItem->Text = L"Quinto superior";
+			this->aToolStripMenuItem1->Name = L"aToolStripMenuItem1";
+			this->aToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->aToolStripMenuItem1->Text = L"A";
 			// 
-			// tercioSuperiorToolStripMenuItem
+			// bToolStripMenuItem1
 			// 
-			this->tercioSuperiorToolStripMenuItem->Name = L"tercioSuperiorToolStripMenuItem";
-			this->tercioSuperiorToolStripMenuItem->Size = System::Drawing::Size(157, 22);
-			this->tercioSuperiorToolStripMenuItem->Text = L"Tercio superior";
+			this->bToolStripMenuItem1->Name = L"bToolStripMenuItem1";
+			this->bToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->bToolStripMenuItem1->Text = L"B";
 			// 
-			// reprobadosToolStripMenuItem
+			// cToolStripMenuItem1
 			// 
-			this->reprobadosToolStripMenuItem->Name = L"reprobadosToolStripMenuItem";
-			this->reprobadosToolStripMenuItem->Size = System::Drawing::Size(157, 22);
-			this->reprobadosToolStripMenuItem->Text = L"Reprobados";
+			this->cToolStripMenuItem1->Name = L"cToolStripMenuItem1";
+			this->cToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->cToolStripMenuItem1->Text = L"C";
 			// 
-			// deudaToolStripMenuItem
+			// dToolStripMenuItem1
 			// 
-			this->deudaToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
-				this->siToolStripMenuItem,
-					this->noToolStripMenuItem
+			this->dToolStripMenuItem1->Name = L"dToolStripMenuItem1";
+			this->dToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->dToolStripMenuItem1->Text = L"D";
+			// 
+			// eToolStripMenuItem1
+			// 
+			this->eToolStripMenuItem1->Name = L"eToolStripMenuItem1";
+			this->eToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->eToolStripMenuItem1->Text = L"E";
+			// 
+			// fToolStripMenuItem1
+			// 
+			this->fToolStripMenuItem1->Name = L"fToolStripMenuItem1";
+			this->fToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->fToolStripMenuItem1->Text = L"F";
+			// 
+			// gToolStripMenuItem1
+			// 
+			this->gToolStripMenuItem1->Name = L"gToolStripMenuItem1";
+			this->gToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->gToolStripMenuItem1->Text = L"G";
+			// 
+			// hToolStripMenuItem1
+			// 
+			this->hToolStripMenuItem1->Name = L"hToolStripMenuItem1";
+			this->hToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->hToolStripMenuItem1->Text = L"H";
+			// 
+			// iToolStripMenuItem1
+			// 
+			this->iToolStripMenuItem1->Name = L"iToolStripMenuItem1";
+			this->iToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->iToolStripMenuItem1->Text = L"I";
+			// 
+			// jToolStripMenuItem1
+			// 
+			this->jToolStripMenuItem1->Name = L"jToolStripMenuItem1";
+			this->jToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->jToolStripMenuItem1->Text = L"J";
+			// 
+			// kToolStripMenuItem1
+			// 
+			this->kToolStripMenuItem1->Name = L"kToolStripMenuItem1";
+			this->kToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->kToolStripMenuItem1->Text = L"K";
+			// 
+			// lToolStripMenuItem1
+			// 
+			this->lToolStripMenuItem1->Name = L"lToolStripMenuItem1";
+			this->lToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->lToolStripMenuItem1->Text = L"L";
+			// 
+			// mToolStripMenuItem1
+			// 
+			this->mToolStripMenuItem1->Name = L"mToolStripMenuItem1";
+			this->mToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->mToolStripMenuItem1->Text = L"M";
+			// 
+			// nToolStripMenuItem1
+			// 
+			this->nToolStripMenuItem1->Name = L"nToolStripMenuItem1";
+			this->nToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->nToolStripMenuItem1->Text = L"N";
+			// 
+			// oToolStripMenuItem1
+			// 
+			this->oToolStripMenuItem1->Name = L"oToolStripMenuItem1";
+			this->oToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->oToolStripMenuItem1->Text = L"O";
+			// 
+			// pToolStripMenuItem1
+			// 
+			this->pToolStripMenuItem1->Name = L"pToolStripMenuItem1";
+			this->pToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->pToolStripMenuItem1->Text = L"P";
+			// 
+			// qToolStripMenuItem1
+			// 
+			this->qToolStripMenuItem1->Name = L"qToolStripMenuItem1";
+			this->qToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->qToolStripMenuItem1->Text = L"Q";
+			// 
+			// rToolStripMenuItem1
+			// 
+			this->rToolStripMenuItem1->Name = L"rToolStripMenuItem1";
+			this->rToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->rToolStripMenuItem1->Text = L"R";
+			// 
+			// sToolStripMenuItem1
+			// 
+			this->sToolStripMenuItem1->Name = L"sToolStripMenuItem1";
+			this->sToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->sToolStripMenuItem1->Text = L"S";
+			// 
+			// tToolStripMenuItem1
+			// 
+			this->tToolStripMenuItem1->Name = L"tToolStripMenuItem1";
+			this->tToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->tToolStripMenuItem1->Text = L"T";
+			// 
+			// uToolStripMenuItem1
+			// 
+			this->uToolStripMenuItem1->Name = L"uToolStripMenuItem1";
+			this->uToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->uToolStripMenuItem1->Text = L"U";
+			// 
+			// vToolStripMenuItem1
+			// 
+			this->vToolStripMenuItem1->Name = L"vToolStripMenuItem1";
+			this->vToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->vToolStripMenuItem1->Text = L"V";
+			// 
+			// wToolStripMenuItem1
+			// 
+			this->wToolStripMenuItem1->Name = L"wToolStripMenuItem1";
+			this->wToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->wToolStripMenuItem1->Text = L"W";
+			// 
+			// xToolStripMenuItem1
+			// 
+			this->xToolStripMenuItem1->Name = L"xToolStripMenuItem1";
+			this->xToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->xToolStripMenuItem1->Text = L"X";
+			// 
+			// yToolStripMenuItem1
+			// 
+			this->yToolStripMenuItem1->Name = L"yToolStripMenuItem1";
+			this->yToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->yToolStripMenuItem1->Text = L"Y";
+			// 
+			// zToolStripMenuItem1
+			// 
+			this->zToolStripMenuItem1->Name = L"zToolStripMenuItem1";
+			this->zToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->zToolStripMenuItem1->Text = L"Z";
+			// 
+			// promedioPToolStripMenuItem1
+			// 
+			this->promedioPToolStripMenuItem1->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(3) {
+				this->quintoSuperiorToolStripMenuItem1,
+					this->tercioSuperiorToolStripMenuItem1, this->reprobadosToolStripMenuItem1
 			});
-			this->deudaToolStripMenuItem->Name = L"deudaToolStripMenuItem";
-			this->deudaToolStripMenuItem->Size = System::Drawing::Size(174, 22);
-			this->deudaToolStripMenuItem->Text = L"Deuda";
+			this->promedioPToolStripMenuItem1->Name = L"promedioPToolStripMenuItem1";
+			this->promedioPToolStripMenuItem1->Size = System::Drawing::Size(164, 22);
+			this->promedioPToolStripMenuItem1->Text = L"Promedio P.";
 			// 
-			// siToolStripMenuItem
+			// quintoSuperiorToolStripMenuItem1
 			// 
-			this->siToolStripMenuItem->Name = L"siToolStripMenuItem";
-			this->siToolStripMenuItem->Size = System::Drawing::Size(90, 22);
-			this->siToolStripMenuItem->Text = L"Si";
+			this->quintoSuperiorToolStripMenuItem1->Name = L"quintoSuperiorToolStripMenuItem1";
+			this->quintoSuperiorToolStripMenuItem1->Size = System::Drawing::Size(158, 22);
+			this->quintoSuperiorToolStripMenuItem1->Text = L"Quinto Superior";
 			// 
-			// noToolStripMenuItem
+			// tercioSuperiorToolStripMenuItem1
 			// 
-			this->noToolStripMenuItem->Name = L"noToolStripMenuItem";
-			this->noToolStripMenuItem->Size = System::Drawing::Size(90, 22);
-			this->noToolStripMenuItem->Text = L"No";
+			this->tercioSuperiorToolStripMenuItem1->Name = L"tercioSuperiorToolStripMenuItem1";
+			this->tercioSuperiorToolStripMenuItem1->Size = System::Drawing::Size(158, 22);
+			this->tercioSuperiorToolStripMenuItem1->Text = L"Tercio Superior";
+			// 
+			// reprobadosToolStripMenuItem1
+			// 
+			this->reprobadosToolStripMenuItem1->Name = L"reprobadosToolStripMenuItem1";
+			this->reprobadosToolStripMenuItem1->Size = System::Drawing::Size(158, 22);
+			this->reprobadosToolStripMenuItem1->Text = L"Reprobados";
+			// 
+			// deudaPendienteToolStripMenuItem
+			// 
+			this->deudaPendienteToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
+				this->siToolStripMenuItem1,
+					this->noToolStripMenuItem1
+			});
+			this->deudaPendienteToolStripMenuItem->Name = L"deudaPendienteToolStripMenuItem";
+			this->deudaPendienteToolStripMenuItem->Size = System::Drawing::Size(164, 22);
+			this->deudaPendienteToolStripMenuItem->Text = L"Deuda Pendiente";
+			// 
+			// siToolStripMenuItem1
+			// 
+			this->siToolStripMenuItem1->Name = L"siToolStripMenuItem1";
+			this->siToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->siToolStripMenuItem1->Text = L"Si";
+			// 
+			// noToolStripMenuItem1
+			// 
+			this->noToolStripMenuItem1->Name = L"noToolStripMenuItem1";
+			this->noToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->noToolStripMenuItem1->Text = L"No";
+			// 
+			// porMesToolStripMenuItem
+			// 
+			this->porMesToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(12) {
+				this->eneroToolStripMenuItem,
+					this->febreroToolStripMenuItem, this->marzoToolStripMenuItem, this->abrilToolStripMenuItem, this->mayoToolStripMenuItem, this->junioToolStripMenuItem,
+					this->julioToolStripMenuItem, this->agostoToolStripMenuItem, this->septiembreToolStripMenuItem, this->octubreToolStripMenuItem,
+					this->noviembreToolStripMenuItem, this->diciembreToolStripMenuItem
+			});
+			this->porMesToolStripMenuItem->Name = L"porMesToolStripMenuItem";
+			this->porMesToolStripMenuItem->Size = System::Drawing::Size(164, 22);
+			this->porMesToolStripMenuItem->Text = L"Por mes";
+			// 
+			// eneroToolStripMenuItem
+			// 
+			this->eneroToolStripMenuItem->Name = L"eneroToolStripMenuItem";
+			this->eneroToolStripMenuItem->Size = System::Drawing::Size(152, 22);
+			this->eneroToolStripMenuItem->Text = L"Enero";
+			// 
+			// febreroToolStripMenuItem
+			// 
+			this->febreroToolStripMenuItem->Name = L"febreroToolStripMenuItem";
+			this->febreroToolStripMenuItem->Size = System::Drawing::Size(152, 22);
+			this->febreroToolStripMenuItem->Text = L"Febrero";
+			// 
+			// marzoToolStripMenuItem
+			// 
+			this->marzoToolStripMenuItem->Name = L"marzoToolStripMenuItem";
+			this->marzoToolStripMenuItem->Size = System::Drawing::Size(152, 22);
+			this->marzoToolStripMenuItem->Text = L"Marzo";
+			// 
+			// abrilToolStripMenuItem
+			// 
+			this->abrilToolStripMenuItem->Name = L"abrilToolStripMenuItem";
+			this->abrilToolStripMenuItem->Size = System::Drawing::Size(152, 22);
+			this->abrilToolStripMenuItem->Text = L"Abril";
+			// 
+			// mayoToolStripMenuItem
+			// 
+			this->mayoToolStripMenuItem->Name = L"mayoToolStripMenuItem";
+			this->mayoToolStripMenuItem->Size = System::Drawing::Size(152, 22);
+			this->mayoToolStripMenuItem->Text = L"Mayo";
+			// 
+			// junioToolStripMenuItem
+			// 
+			this->junioToolStripMenuItem->Name = L"junioToolStripMenuItem";
+			this->junioToolStripMenuItem->Size = System::Drawing::Size(152, 22);
+			this->junioToolStripMenuItem->Text = L"Junio";
+			// 
+			// julioToolStripMenuItem
+			// 
+			this->julioToolStripMenuItem->Name = L"julioToolStripMenuItem";
+			this->julioToolStripMenuItem->Size = System::Drawing::Size(152, 22);
+			this->julioToolStripMenuItem->Text = L"Julio";
+			// 
+			// agostoToolStripMenuItem
+			// 
+			this->agostoToolStripMenuItem->Name = L"agostoToolStripMenuItem";
+			this->agostoToolStripMenuItem->Size = System::Drawing::Size(152, 22);
+			this->agostoToolStripMenuItem->Text = L"Agosto";
+			// 
+			// septiembreToolStripMenuItem
+			// 
+			this->septiembreToolStripMenuItem->Name = L"septiembreToolStripMenuItem";
+			this->septiembreToolStripMenuItem->Size = System::Drawing::Size(152, 22);
+			this->septiembreToolStripMenuItem->Text = L"Septiembre";
+			// 
+			// octubreToolStripMenuItem
+			// 
+			this->octubreToolStripMenuItem->Name = L"octubreToolStripMenuItem";
+			this->octubreToolStripMenuItem->Size = System::Drawing::Size(152, 22);
+			this->octubreToolStripMenuItem->Text = L"Octubre";
+			// 
+			// noviembreToolStripMenuItem
+			// 
+			this->noviembreToolStripMenuItem->Name = L"noviembreToolStripMenuItem";
+			this->noviembreToolStripMenuItem->Size = System::Drawing::Size(152, 22);
+			this->noviembreToolStripMenuItem->Text = L"Noviembre";
+			// 
+			// diciembreToolStripMenuItem
+			// 
+			this->diciembreToolStripMenuItem->Name = L"diciembreToolStripMenuItem";
+			this->diciembreToolStripMenuItem->Size = System::Drawing::Size(152, 22);
+			this->diciembreToolStripMenuItem->Text = L"Diciembre";
+			// 
+			// ordenarToolStripMenuItem
+			// 
+			this->ordenarToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(5) {
+				this->fechaToolStripMenuItem,
+					this->nombreToolStripMenuItem1, this->promedioPonderadoToolStripMenuItem, this->deudaPendienteToolStripMenuItem1, this->pesoToolStripMenuItem
+			});
+			this->ordenarToolStripMenuItem->Name = L"ordenarToolStripMenuItem";
+			this->ordenarToolStripMenuItem->Size = System::Drawing::Size(62, 20);
+			this->ordenarToolStripMenuItem->Text = L"Ordenar";
+			// 
+			// fechaToolStripMenuItem
+			// 
+			this->fechaToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
+				this->masRecienteAMasAntiguoToolStripMenuItem,
+					this->masAntiguoAMasRecienteToolStripMenuItem
+			});
+			this->fechaToolStripMenuItem->Name = L"fechaToolStripMenuItem";
+			this->fechaToolStripMenuItem->Size = System::Drawing::Size(187, 22);
+			this->fechaToolStripMenuItem->Text = L"Fecha";
+			// 
+			// masRecienteAMasAntiguoToolStripMenuItem
+			// 
+			this->masRecienteAMasAntiguoToolStripMenuItem->Name = L"masRecienteAMasAntiguoToolStripMenuItem";
+			this->masRecienteAMasAntiguoToolStripMenuItem->Size = System::Drawing::Size(219, 22);
+			this->masRecienteAMasAntiguoToolStripMenuItem->Text = L"Mas reciente a mas antiguo";
+			// 
+			// masAntiguoAMasRecienteToolStripMenuItem
+			// 
+			this->masAntiguoAMasRecienteToolStripMenuItem->Name = L"masAntiguoAMasRecienteToolStripMenuItem";
+			this->masAntiguoAMasRecienteToolStripMenuItem->Size = System::Drawing::Size(219, 22);
+			this->masAntiguoAMasRecienteToolStripMenuItem->Text = L"Mas antiguo a mas reciente";
+			// 
+			// nombreToolStripMenuItem1
+			// 
+			this->nombreToolStripMenuItem1->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
+				this->ordenAlfabeticoAcendenteToolStripMenuItem,
+					this->ordenAlfabeticoDescendenteToolStripMenuItem
+			});
+			this->nombreToolStripMenuItem1->Name = L"nombreToolStripMenuItem1";
+			this->nombreToolStripMenuItem1->Size = System::Drawing::Size(187, 22);
+			this->nombreToolStripMenuItem1->Text = L"Nombre";
+			// 
+			// ordenAlfabeticoAcendenteToolStripMenuItem
+			// 
+			this->ordenAlfabeticoAcendenteToolStripMenuItem->Name = L"ordenAlfabeticoAcendenteToolStripMenuItem";
+			this->ordenAlfabeticoAcendenteToolStripMenuItem->Size = System::Drawing::Size(232, 22);
+			this->ordenAlfabeticoAcendenteToolStripMenuItem->Text = L"Orden alfabetico acendente";
+			// 
+			// ordenAlfabeticoDescendenteToolStripMenuItem
+			// 
+			this->ordenAlfabeticoDescendenteToolStripMenuItem->Name = L"ordenAlfabeticoDescendenteToolStripMenuItem";
+			this->ordenAlfabeticoDescendenteToolStripMenuItem->Size = System::Drawing::Size(232, 22);
+			this->ordenAlfabeticoDescendenteToolStripMenuItem->Text = L"Orden alfabetico descendente";
+			// 
+			// promedioPonderadoToolStripMenuItem
+			// 
+			this->promedioPonderadoToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
+				this->mayorNotaAMenorToolStripMenuItem,
+					this->menorNotaAMayorToolStripMenuItem
+			});
+			this->promedioPonderadoToolStripMenuItem->Name = L"promedioPonderadoToolStripMenuItem";
+			this->promedioPonderadoToolStripMenuItem->Size = System::Drawing::Size(187, 22);
+			this->promedioPonderadoToolStripMenuItem->Text = L"Promedio Ponderado";
+			// 
+			// mayorNotaAMenorToolStripMenuItem
+			// 
+			this->mayorNotaAMenorToolStripMenuItem->Name = L"mayorNotaAMenorToolStripMenuItem";
+			this->mayorNotaAMenorToolStripMenuItem->Size = System::Drawing::Size(182, 22);
+			this->mayorNotaAMenorToolStripMenuItem->Text = L"Mayor nota a menor";
+			// 
+			// menorNotaAMayorToolStripMenuItem
+			// 
+			this->menorNotaAMayorToolStripMenuItem->Name = L"menorNotaAMayorToolStripMenuItem";
+			this->menorNotaAMayorToolStripMenuItem->Size = System::Drawing::Size(182, 22);
+			this->menorNotaAMayorToolStripMenuItem->Text = L"Menor nota a mayor";
+			// 
+			// deudaPendienteToolStripMenuItem1
+			// 
+			this->deudaPendienteToolStripMenuItem1->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
+				this->mayorDeudaAMenorToolStripMenuItem,
+					this->menorDeudaAMayorToolStripMenuItem
+			});
+			this->deudaPendienteToolStripMenuItem1->Name = L"deudaPendienteToolStripMenuItem1";
+			this->deudaPendienteToolStripMenuItem1->Size = System::Drawing::Size(187, 22);
+			this->deudaPendienteToolStripMenuItem1->Text = L"Deuda Pendiente";
+			// 
+			// mayorDeudaAMenorToolStripMenuItem
+			// 
+			this->mayorDeudaAMenorToolStripMenuItem->Name = L"mayorDeudaAMenorToolStripMenuItem";
+			this->mayorDeudaAMenorToolStripMenuItem->Size = System::Drawing::Size(191, 22);
+			this->mayorDeudaAMenorToolStripMenuItem->Text = L"Mayor deuda a menor";
+			// 
+			// menorDeudaAMayorToolStripMenuItem
+			// 
+			this->menorDeudaAMayorToolStripMenuItem->Name = L"menorDeudaAMayorToolStripMenuItem";
+			this->menorDeudaAMayorToolStripMenuItem->Size = System::Drawing::Size(191, 22);
+			this->menorDeudaAMayorToolStripMenuItem->Text = L"Menor deuda a mayor";
+			// 
+			// pesoToolStripMenuItem
+			// 
+			this->pesoToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
+				this->mayorPesoAMenorToolStripMenuItem,
+					this->menorPesoAMayorToolStripMenuItem
+			});
+			this->pesoToolStripMenuItem->Name = L"pesoToolStripMenuItem";
+			this->pesoToolStripMenuItem->Size = System::Drawing::Size(187, 22);
+			this->pesoToolStripMenuItem->Text = L"Peso";
+			// 
+			// mayorPesoAMenorToolStripMenuItem
+			// 
+			this->mayorPesoAMenorToolStripMenuItem->Name = L"mayorPesoAMenorToolStripMenuItem";
+			this->mayorPesoAMenorToolStripMenuItem->Size = System::Drawing::Size(183, 22);
+			this->mayorPesoAMenorToolStripMenuItem->Text = L"Mayor peso a menor";
+			// 
+			// menorPesoAMayorToolStripMenuItem
+			// 
+			this->menorPesoAMayorToolStripMenuItem->Name = L"menorPesoAMayorToolStripMenuItem";
+			this->menorPesoAMayorToolStripMenuItem->Size = System::Drawing::Size(183, 22);
+			this->menorPesoAMayorToolStripMenuItem->Text = L"Menor peso a mayor";
 			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(1259, 522);
-			this->Controls->Add(this->panel2);
-			this->Controls->Add(this->panel1);
+			this->Controls->Add(this->OpcMSrp);
+			this->Controls->Add(this->DatosPnl);
+			this->Controls->Add(this->ArchivosPnl);
+			this->MainMenuStrip = this->OpcMSrp;
 			this->Name = L"MyForm";
 			this->Text = L"MyForm";
-			this->panel1->ResumeLayout(false);
-			this->panel1->PerformLayout();
-			this->contextMenuStrip1->ResumeLayout(false);
+			this->ArchivosPnl->ResumeLayout(false);
+			this->ArchivosPnl->PerformLayout();
+			this->OpcMSrp->ResumeLayout(false);
+			this->OpcMSrp->PerformLayout();
 			this->ResumeLayout(false);
+			this->PerformLayout();
 
 		}
 #pragma endregion
 	
 	
+
 
 
 
