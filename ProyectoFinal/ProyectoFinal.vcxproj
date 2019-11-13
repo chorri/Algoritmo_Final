@@ -137,10 +137,13 @@
     <ClCompile Include="MyForm.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Alumno.hpp" />
+    <ClInclude Include="ArbolAVL.hpp" />
     <ClInclude Include="FolderManager.h" />
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="NodoAVL.hpp" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MyForm.resx">
