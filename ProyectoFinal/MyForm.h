@@ -39,15 +39,19 @@ namespace ProyectoFinal {
 
 
 	private: System::Windows::Forms::Label^  lblNombre;
+	private: System::Windows::Forms::Label^  lblPeso;
 
 
 
 
-	private: System::Windows::Forms::Label^  label4;
-	private: System::Windows::Forms::Label^  label3;
-	private: System::Windows::Forms::Label^  label2;
 
-	private: System::Windows::Forms::Label^  label5;
+	private: System::Windows::Forms::Label^  lblPP;
+	private: System::Windows::Forms::Label^  lblFecha;
+
+
+	private: System::Windows::Forms::Label^  lblDP;
+
+
 	private: System::Windows::Forms::Panel^  DatosPnl;
 	private: System::Windows::Forms::MenuStrip^  OpcMSrp;
 
@@ -118,41 +122,86 @@ namespace ProyectoFinal {
 	private: System::Windows::Forms::ToolStripMenuItem^  menorPesoAMayorToolStripMenuItem;
 private: System::Windows::Forms::TextBox^  textBox1;
 private: System::Windows::Forms::Label^  label1;
-private: System::Windows::Forms::Label^  label40;
-private: System::Windows::Forms::Label^  label39;
-private: System::Windows::Forms::Label^  label38;
-private: System::Windows::Forms::Label^  label37;
-private: System::Windows::Forms::Label^  label36;
-private: System::Windows::Forms::Label^  label35;
-private: System::Windows::Forms::Label^  label34;
-private: System::Windows::Forms::Label^  label33;
-private: System::Windows::Forms::Label^  label32;
-private: System::Windows::Forms::Label^  label31;
-private: System::Windows::Forms::Label^  label30;
-private: System::Windows::Forms::Label^  label29;
-private: System::Windows::Forms::Label^  label28;
-private: System::Windows::Forms::Label^  label27;
-private: System::Windows::Forms::Label^  label26;
-private: System::Windows::Forms::Label^  label25;
-private: System::Windows::Forms::Label^  label24;
-private: System::Windows::Forms::Label^  label23;
-private: System::Windows::Forms::Label^  label22;
-private: System::Windows::Forms::Label^  label21;
-private: System::Windows::Forms::Label^  label20;
-private: System::Windows::Forms::Label^  label19;
-private: System::Windows::Forms::Label^  label18;
-private: System::Windows::Forms::Label^  label17;
-private: System::Windows::Forms::Label^  label16;
-private: System::Windows::Forms::Label^  label15;
-private: System::Windows::Forms::Label^  label14;
-private: System::Windows::Forms::Label^  label13;
-private: System::Windows::Forms::Label^  label12;
-private: System::Windows::Forms::Label^  label11;
-private: System::Windows::Forms::Label^  label10;
-private: System::Windows::Forms::Label^  label9;
-private: System::Windows::Forms::Label^  label8;
-private: System::Windows::Forms::Label^  label7;
-private: System::Windows::Forms::Label^  label6;
+private: System::Windows::Forms::Label^  lblFecha6;
+private: System::Windows::Forms::Label^  lblFecha7;
+
+
+private: System::Windows::Forms::Label^  lblFecha5;
+
+private: System::Windows::Forms::Label^  lblFecha4;
+
+private: System::Windows::Forms::Label^  lblFecha3;
+
+private: System::Windows::Forms::Label^  lblFecha2;
+
+private: System::Windows::Forms::Label^  lblFecha1;
+
+private: System::Windows::Forms::Label^  lblPeso7;
+
+private: System::Windows::Forms::Label^  lblPeso6;
+
+private: System::Windows::Forms::Label^  lblPeso5;
+
+private: System::Windows::Forms::Label^  lblPeso4;
+
+private: System::Windows::Forms::Label^  lblPeso3;
+
+private: System::Windows::Forms::Label^  lblPeso2;
+
+private: System::Windows::Forms::Label^  lblPeso1;
+
+private: System::Windows::Forms::Label^  lblDP7;
+
+private: System::Windows::Forms::Label^  lblDP6;
+
+private: System::Windows::Forms::Label^  lblDP5;
+
+private: System::Windows::Forms::Label^  lblDP4;
+
+private: System::Windows::Forms::Label^  lblDP3;
+
+private: System::Windows::Forms::Label^  lblDP2;
+
+private: System::Windows::Forms::Label^  lblDP1;
+
+private: System::Windows::Forms::Label^  lblPP7;
+
+private: System::Windows::Forms::Label^  lblPP6;
+
+private: System::Windows::Forms::Label^  lblPP5;
+
+private: System::Windows::Forms::Label^  lblPP4;
+
+private: System::Windows::Forms::Label^  lblPP3;
+
+private: System::Windows::Forms::Label^  lblPP2;
+
+private: System::Windows::Forms::Label^  lblPP1;
+
+private: System::Windows::Forms::Label^  lblNombre7;
+
+private: System::Windows::Forms::Label^  lblNombre6;
+
+private: System::Windows::Forms::Label^  lblNombre5;
+
+private: System::Windows::Forms::Label^  lblNombre4;
+
+private: System::Windows::Forms::Label^  lblNombre3;
+
+private: System::Windows::Forms::Label^  lblNombre2;
+
+private: System::Windows::Forms::Label^  lblNombre1;
+private: System::Windows::Forms::Label^  lblFecha8;
+
+private: System::Windows::Forms::Label^  lblPeso8;
+
+private: System::Windows::Forms::Label^  lblDP8;
+
+private: System::Windows::Forms::Label^  lblPP8;
+
+private: System::Windows::Forms::Label^  lblNombre8;
+
+
 
 
 
@@ -209,10 +258,45 @@ private: System::Windows::Forms::Label^  label6;
 		void InitializeComponent(void)
 		{
 			this->ArchivosPnl = (gcnew System::Windows::Forms::Panel());
-			this->label5 = (gcnew System::Windows::Forms::Label());
-			this->label4 = (gcnew System::Windows::Forms::Label());
-			this->label3 = (gcnew System::Windows::Forms::Label());
-			this->label2 = (gcnew System::Windows::Forms::Label());
+			this->lblFecha6 = (gcnew System::Windows::Forms::Label());
+			this->lblFecha7 = (gcnew System::Windows::Forms::Label());
+			this->lblFecha5 = (gcnew System::Windows::Forms::Label());
+			this->lblFecha4 = (gcnew System::Windows::Forms::Label());
+			this->lblFecha3 = (gcnew System::Windows::Forms::Label());
+			this->lblFecha2 = (gcnew System::Windows::Forms::Label());
+			this->lblFecha1 = (gcnew System::Windows::Forms::Label());
+			this->lblPeso7 = (gcnew System::Windows::Forms::Label());
+			this->lblPeso6 = (gcnew System::Windows::Forms::Label());
+			this->lblPeso5 = (gcnew System::Windows::Forms::Label());
+			this->lblPeso4 = (gcnew System::Windows::Forms::Label());
+			this->lblPeso3 = (gcnew System::Windows::Forms::Label());
+			this->lblPeso2 = (gcnew System::Windows::Forms::Label());
+			this->lblPeso1 = (gcnew System::Windows::Forms::Label());
+			this->lblDP7 = (gcnew System::Windows::Forms::Label());
+			this->lblDP6 = (gcnew System::Windows::Forms::Label());
+			this->lblDP5 = (gcnew System::Windows::Forms::Label());
+			this->lblDP4 = (gcnew System::Windows::Forms::Label());
+			this->lblDP3 = (gcnew System::Windows::Forms::Label());
+			this->lblDP2 = (gcnew System::Windows::Forms::Label());
+			this->lblDP1 = (gcnew System::Windows::Forms::Label());
+			this->lblPP7 = (gcnew System::Windows::Forms::Label());
+			this->lblPP6 = (gcnew System::Windows::Forms::Label());
+			this->lblPP5 = (gcnew System::Windows::Forms::Label());
+			this->lblPP4 = (gcnew System::Windows::Forms::Label());
+			this->lblPP3 = (gcnew System::Windows::Forms::Label());
+			this->lblPP2 = (gcnew System::Windows::Forms::Label());
+			this->lblPP1 = (gcnew System::Windows::Forms::Label());
+			this->lblNombre7 = (gcnew System::Windows::Forms::Label());
+			this->lblNombre6 = (gcnew System::Windows::Forms::Label());
+			this->lblNombre5 = (gcnew System::Windows::Forms::Label());
+			this->lblNombre4 = (gcnew System::Windows::Forms::Label());
+			this->lblNombre3 = (gcnew System::Windows::Forms::Label());
+			this->lblNombre2 = (gcnew System::Windows::Forms::Label());
+			this->lblNombre1 = (gcnew System::Windows::Forms::Label());
+			this->lblDP = (gcnew System::Windows::Forms::Label());
+			this->lblPeso = (gcnew System::Windows::Forms::Label());
+			this->lblPP = (gcnew System::Windows::Forms::Label());
+			this->lblFecha = (gcnew System::Windows::Forms::Label());
 			this->lblNombre = (gcnew System::Windows::Forms::Label());
 			this->DatosPnl = (gcnew System::Windows::Forms::Panel());
 			this->OpcMSrp = (gcnew System::Windows::Forms::MenuStrip());
@@ -282,127 +366,417 @@ private: System::Windows::Forms::Label^  label6;
 			this->menorPesoAMayorToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->label1 = (gcnew System::Windows::Forms::Label());
-			this->label6 = (gcnew System::Windows::Forms::Label());
-			this->label7 = (gcnew System::Windows::Forms::Label());
-			this->label8 = (gcnew System::Windows::Forms::Label());
-			this->label9 = (gcnew System::Windows::Forms::Label());
-			this->label10 = (gcnew System::Windows::Forms::Label());
-			this->label11 = (gcnew System::Windows::Forms::Label());
-			this->label12 = (gcnew System::Windows::Forms::Label());
-			this->label13 = (gcnew System::Windows::Forms::Label());
-			this->label14 = (gcnew System::Windows::Forms::Label());
-			this->label15 = (gcnew System::Windows::Forms::Label());
-			this->label16 = (gcnew System::Windows::Forms::Label());
-			this->label17 = (gcnew System::Windows::Forms::Label());
-			this->label18 = (gcnew System::Windows::Forms::Label());
-			this->label19 = (gcnew System::Windows::Forms::Label());
-			this->label20 = (gcnew System::Windows::Forms::Label());
-			this->label21 = (gcnew System::Windows::Forms::Label());
-			this->label22 = (gcnew System::Windows::Forms::Label());
-			this->label23 = (gcnew System::Windows::Forms::Label());
-			this->label24 = (gcnew System::Windows::Forms::Label());
-			this->label25 = (gcnew System::Windows::Forms::Label());
-			this->label27 = (gcnew System::Windows::Forms::Label());
-			this->label26 = (gcnew System::Windows::Forms::Label());
-			this->label28 = (gcnew System::Windows::Forms::Label());
-			this->label29 = (gcnew System::Windows::Forms::Label());
-			this->label30 = (gcnew System::Windows::Forms::Label());
-			this->label31 = (gcnew System::Windows::Forms::Label());
-			this->label32 = (gcnew System::Windows::Forms::Label());
-			this->label33 = (gcnew System::Windows::Forms::Label());
-			this->label34 = (gcnew System::Windows::Forms::Label());
-			this->label35 = (gcnew System::Windows::Forms::Label());
-			this->label36 = (gcnew System::Windows::Forms::Label());
-			this->label37 = (gcnew System::Windows::Forms::Label());
-			this->label38 = (gcnew System::Windows::Forms::Label());
-			this->label39 = (gcnew System::Windows::Forms::Label());
-			this->label40 = (gcnew System::Windows::Forms::Label());
+			this->lblNombre8 = (gcnew System::Windows::Forms::Label());
+			this->lblPP8 = (gcnew System::Windows::Forms::Label());
+			this->lblDP8 = (gcnew System::Windows::Forms::Label());
+			this->lblPeso8 = (gcnew System::Windows::Forms::Label());
+			this->lblFecha8 = (gcnew System::Windows::Forms::Label());
 			this->ArchivosPnl->SuspendLayout();
 			this->OpcMSrp->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// ArchivosPnl
 			// 
-			this->ArchivosPnl->Controls->Add(this->label40);
-			this->ArchivosPnl->Controls->Add(this->label39);
-			this->ArchivosPnl->Controls->Add(this->label38);
-			this->ArchivosPnl->Controls->Add(this->label37);
-			this->ArchivosPnl->Controls->Add(this->label36);
-			this->ArchivosPnl->Controls->Add(this->label35);
-			this->ArchivosPnl->Controls->Add(this->label34);
-			this->ArchivosPnl->Controls->Add(this->label33);
-			this->ArchivosPnl->Controls->Add(this->label32);
-			this->ArchivosPnl->Controls->Add(this->label31);
-			this->ArchivosPnl->Controls->Add(this->label30);
-			this->ArchivosPnl->Controls->Add(this->label29);
-			this->ArchivosPnl->Controls->Add(this->label28);
-			this->ArchivosPnl->Controls->Add(this->label27);
-			this->ArchivosPnl->Controls->Add(this->label26);
-			this->ArchivosPnl->Controls->Add(this->label25);
-			this->ArchivosPnl->Controls->Add(this->label24);
-			this->ArchivosPnl->Controls->Add(this->label23);
-			this->ArchivosPnl->Controls->Add(this->label22);
-			this->ArchivosPnl->Controls->Add(this->label21);
-			this->ArchivosPnl->Controls->Add(this->label20);
-			this->ArchivosPnl->Controls->Add(this->label19);
-			this->ArchivosPnl->Controls->Add(this->label18);
-			this->ArchivosPnl->Controls->Add(this->label17);
-			this->ArchivosPnl->Controls->Add(this->label16);
-			this->ArchivosPnl->Controls->Add(this->label15);
-			this->ArchivosPnl->Controls->Add(this->label14);
-			this->ArchivosPnl->Controls->Add(this->label13);
-			this->ArchivosPnl->Controls->Add(this->label12);
-			this->ArchivosPnl->Controls->Add(this->label11);
-			this->ArchivosPnl->Controls->Add(this->label10);
-			this->ArchivosPnl->Controls->Add(this->label9);
-			this->ArchivosPnl->Controls->Add(this->label8);
-			this->ArchivosPnl->Controls->Add(this->label7);
-			this->ArchivosPnl->Controls->Add(this->label6);
-			this->ArchivosPnl->Controls->Add(this->label5);
-			this->ArchivosPnl->Controls->Add(this->label4);
-			this->ArchivosPnl->Controls->Add(this->label3);
-			this->ArchivosPnl->Controls->Add(this->label2);
+			this->ArchivosPnl->Controls->Add(this->lblFecha8);
+			this->ArchivosPnl->Controls->Add(this->lblPeso8);
+			this->ArchivosPnl->Controls->Add(this->lblDP8);
+			this->ArchivosPnl->Controls->Add(this->lblPP8);
+			this->ArchivosPnl->Controls->Add(this->lblNombre8);
+			this->ArchivosPnl->Controls->Add(this->lblFecha6);
+			this->ArchivosPnl->Controls->Add(this->lblFecha7);
+			this->ArchivosPnl->Controls->Add(this->lblFecha5);
+			this->ArchivosPnl->Controls->Add(this->lblFecha4);
+			this->ArchivosPnl->Controls->Add(this->lblFecha3);
+			this->ArchivosPnl->Controls->Add(this->lblFecha2);
+			this->ArchivosPnl->Controls->Add(this->lblFecha1);
+			this->ArchivosPnl->Controls->Add(this->lblPeso7);
+			this->ArchivosPnl->Controls->Add(this->lblPeso6);
+			this->ArchivosPnl->Controls->Add(this->lblPeso5);
+			this->ArchivosPnl->Controls->Add(this->lblPeso4);
+			this->ArchivosPnl->Controls->Add(this->lblPeso3);
+			this->ArchivosPnl->Controls->Add(this->lblPeso2);
+			this->ArchivosPnl->Controls->Add(this->lblPeso1);
+			this->ArchivosPnl->Controls->Add(this->lblDP7);
+			this->ArchivosPnl->Controls->Add(this->lblDP6);
+			this->ArchivosPnl->Controls->Add(this->lblDP5);
+			this->ArchivosPnl->Controls->Add(this->lblDP4);
+			this->ArchivosPnl->Controls->Add(this->lblDP3);
+			this->ArchivosPnl->Controls->Add(this->lblDP2);
+			this->ArchivosPnl->Controls->Add(this->lblDP1);
+			this->ArchivosPnl->Controls->Add(this->lblPP7);
+			this->ArchivosPnl->Controls->Add(this->lblPP6);
+			this->ArchivosPnl->Controls->Add(this->lblPP5);
+			this->ArchivosPnl->Controls->Add(this->lblPP4);
+			this->ArchivosPnl->Controls->Add(this->lblPP3);
+			this->ArchivosPnl->Controls->Add(this->lblPP2);
+			this->ArchivosPnl->Controls->Add(this->lblPP1);
+			this->ArchivosPnl->Controls->Add(this->lblNombre7);
+			this->ArchivosPnl->Controls->Add(this->lblNombre6);
+			this->ArchivosPnl->Controls->Add(this->lblNombre5);
+			this->ArchivosPnl->Controls->Add(this->lblNombre4);
+			this->ArchivosPnl->Controls->Add(this->lblNombre3);
+			this->ArchivosPnl->Controls->Add(this->lblNombre2);
+			this->ArchivosPnl->Controls->Add(this->lblNombre1);
+			this->ArchivosPnl->Controls->Add(this->lblDP);
+			this->ArchivosPnl->Controls->Add(this->lblPeso);
+			this->ArchivosPnl->Controls->Add(this->lblPP);
+			this->ArchivosPnl->Controls->Add(this->lblFecha);
 			this->ArchivosPnl->Controls->Add(this->lblNombre);
 			this->ArchivosPnl->Location = System::Drawing::Point(24, 44);
 			this->ArchivosPnl->Name = L"ArchivosPnl";
 			this->ArchivosPnl->Size = System::Drawing::Size(623, 466);
 			this->ArchivosPnl->TabIndex = 1;
 			// 
-			// label5
+			// lblFecha6
 			// 
-			this->label5->AutoSize = true;
-			this->label5->Location = System::Drawing::Point(316, 9);
-			this->label5->Name = L"label5";
-			this->label5->Size = System::Drawing::Size(90, 13);
-			this->label5->TabIndex = 4;
-			this->label5->Text = L"Deuda Pendiente";
+			this->lblFecha6->AutoSize = true;
+			this->lblFecha6->Location = System::Drawing::Point(490, 158);
+			this->lblFecha6->Name = L"lblFecha6";
+			this->lblFecha6->Size = System::Drawing::Size(119, 13);
+			this->lblFecha6->TabIndex = 38;
+			this->lblFecha6->Text = L"Fecha de ultima edicion";
 			// 
-			// label4
+			// lblFecha7
 			// 
-			this->label4->AutoSize = true;
-			this->label4->Location = System::Drawing::Point(441, 9);
-			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(31, 13);
-			this->label4->TabIndex = 3;
-			this->label4->Text = L"Peso";
+			this->lblFecha7->AutoSize = true;
+			this->lblFecha7->Location = System::Drawing::Point(490, 185);
+			this->lblFecha7->Name = L"lblFecha7";
+			this->lblFecha7->Size = System::Drawing::Size(119, 13);
+			this->lblFecha7->TabIndex = 38;
+			this->lblFecha7->Text = L"Fecha de ultima edicion";
 			// 
-			// label3
+			// lblFecha5
 			// 
-			this->label3->AutoSize = true;
-			this->label3->Location = System::Drawing::Point(191, 9);
-			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(106, 13);
-			this->label3->TabIndex = 2;
-			this->label3->Text = L"Promedio Ponderado";
+			this->lblFecha5->AutoSize = true;
+			this->lblFecha5->Location = System::Drawing::Point(490, 136);
+			this->lblFecha5->Name = L"lblFecha5";
+			this->lblFecha5->Size = System::Drawing::Size(119, 13);
+			this->lblFecha5->TabIndex = 37;
+			this->lblFecha5->Text = L"Fecha de ultima edicion";
 			// 
-			// label2
+			// lblFecha4
 			// 
-			this->label2->AutoSize = true;
-			this->label2->Location = System::Drawing::Point(490, 9);
-			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(119, 13);
-			this->label2->TabIndex = 1;
-			this->label2->Text = L"Fecha de ultima edicion";
+			this->lblFecha4->AutoSize = true;
+			this->lblFecha4->Location = System::Drawing::Point(490, 108);
+			this->lblFecha4->Name = L"lblFecha4";
+			this->lblFecha4->Size = System::Drawing::Size(119, 13);
+			this->lblFecha4->TabIndex = 36;
+			this->lblFecha4->Text = L"Fecha de ultima edicion";
+			// 
+			// lblFecha3
+			// 
+			this->lblFecha3->AutoSize = true;
+			this->lblFecha3->Location = System::Drawing::Point(490, 86);
+			this->lblFecha3->Name = L"lblFecha3";
+			this->lblFecha3->Size = System::Drawing::Size(119, 13);
+			this->lblFecha3->TabIndex = 35;
+			this->lblFecha3->Text = L"Fecha de ultima edicion";
+			// 
+			// lblFecha2
+			// 
+			this->lblFecha2->AutoSize = true;
+			this->lblFecha2->Location = System::Drawing::Point(490, 64);
+			this->lblFecha2->Name = L"lblFecha2";
+			this->lblFecha2->Size = System::Drawing::Size(119, 13);
+			this->lblFecha2->TabIndex = 34;
+			this->lblFecha2->Text = L"Fecha de ultima edicion";
+			// 
+			// lblFecha1
+			// 
+			this->lblFecha1->AutoSize = true;
+			this->lblFecha1->Location = System::Drawing::Point(490, 40);
+			this->lblFecha1->Name = L"lblFecha1";
+			this->lblFecha1->Size = System::Drawing::Size(119, 13);
+			this->lblFecha1->TabIndex = 33;
+			this->lblFecha1->Text = L"Fecha de ultima edicion";
+			// 
+			// lblPeso7
+			// 
+			this->lblPeso7->AutoSize = true;
+			this->lblPeso7->Location = System::Drawing::Point(441, 185);
+			this->lblPeso7->Name = L"lblPeso7";
+			this->lblPeso7->Size = System::Drawing::Size(31, 13);
+			this->lblPeso7->TabIndex = 32;
+			this->lblPeso7->Text = L"Peso";
+			// 
+			// lblPeso6
+			// 
+			this->lblPeso6->AutoSize = true;
+			this->lblPeso6->Location = System::Drawing::Point(441, 158);
+			this->lblPeso6->Name = L"lblPeso6";
+			this->lblPeso6->Size = System::Drawing::Size(31, 13);
+			this->lblPeso6->TabIndex = 31;
+			this->lblPeso6->Text = L"Peso";
+			// 
+			// lblPeso5
+			// 
+			this->lblPeso5->AutoSize = true;
+			this->lblPeso5->Location = System::Drawing::Point(441, 136);
+			this->lblPeso5->Name = L"lblPeso5";
+			this->lblPeso5->Size = System::Drawing::Size(31, 13);
+			this->lblPeso5->TabIndex = 30;
+			this->lblPeso5->Text = L"Peso";
+			// 
+			// lblPeso4
+			// 
+			this->lblPeso4->AutoSize = true;
+			this->lblPeso4->Location = System::Drawing::Point(441, 108);
+			this->lblPeso4->Name = L"lblPeso4";
+			this->lblPeso4->Size = System::Drawing::Size(31, 13);
+			this->lblPeso4->TabIndex = 29;
+			this->lblPeso4->Text = L"Peso";
+			// 
+			// lblPeso3
+			// 
+			this->lblPeso3->AutoSize = true;
+			this->lblPeso3->Location = System::Drawing::Point(441, 86);
+			this->lblPeso3->Name = L"lblPeso3";
+			this->lblPeso3->Size = System::Drawing::Size(31, 13);
+			this->lblPeso3->TabIndex = 28;
+			this->lblPeso3->Text = L"Peso";
+			// 
+			// lblPeso2
+			// 
+			this->lblPeso2->AutoSize = true;
+			this->lblPeso2->Location = System::Drawing::Point(441, 64);
+			this->lblPeso2->Name = L"lblPeso2";
+			this->lblPeso2->Size = System::Drawing::Size(31, 13);
+			this->lblPeso2->TabIndex = 27;
+			this->lblPeso2->Text = L"Peso";
+			// 
+			// lblPeso1
+			// 
+			this->lblPeso1->AutoSize = true;
+			this->lblPeso1->Location = System::Drawing::Point(441, 40);
+			this->lblPeso1->Name = L"lblPeso1";
+			this->lblPeso1->Size = System::Drawing::Size(31, 13);
+			this->lblPeso1->TabIndex = 26;
+			this->lblPeso1->Text = L"Peso";
+			// 
+			// lblDP7
+			// 
+			this->lblDP7->AutoSize = true;
+			this->lblDP7->Location = System::Drawing::Point(316, 185);
+			this->lblDP7->Name = L"lblDP7";
+			this->lblDP7->Size = System::Drawing::Size(90, 13);
+			this->lblDP7->TabIndex = 25;
+			this->lblDP7->Text = L"Deuda Pendiente";
+			// 
+			// lblDP6
+			// 
+			this->lblDP6->AutoSize = true;
+			this->lblDP6->Location = System::Drawing::Point(316, 158);
+			this->lblDP6->Name = L"lblDP6";
+			this->lblDP6->Size = System::Drawing::Size(90, 13);
+			this->lblDP6->TabIndex = 24;
+			this->lblDP6->Text = L"Deuda Pendiente";
+			// 
+			// lblDP5
+			// 
+			this->lblDP5->AutoSize = true;
+			this->lblDP5->Location = System::Drawing::Point(316, 136);
+			this->lblDP5->Name = L"lblDP5";
+			this->lblDP5->Size = System::Drawing::Size(90, 13);
+			this->lblDP5->TabIndex = 23;
+			this->lblDP5->Text = L"Deuda Pendiente";
+			// 
+			// lblDP4
+			// 
+			this->lblDP4->AutoSize = true;
+			this->lblDP4->Location = System::Drawing::Point(316, 108);
+			this->lblDP4->Name = L"lblDP4";
+			this->lblDP4->Size = System::Drawing::Size(90, 13);
+			this->lblDP4->TabIndex = 22;
+			this->lblDP4->Text = L"Deuda Pendiente";
+			// 
+			// lblDP3
+			// 
+			this->lblDP3->AutoSize = true;
+			this->lblDP3->Location = System::Drawing::Point(316, 86);
+			this->lblDP3->Name = L"lblDP3";
+			this->lblDP3->Size = System::Drawing::Size(90, 13);
+			this->lblDP3->TabIndex = 21;
+			this->lblDP3->Text = L"Deuda Pendiente";
+			// 
+			// lblDP2
+			// 
+			this->lblDP2->AutoSize = true;
+			this->lblDP2->Location = System::Drawing::Point(316, 64);
+			this->lblDP2->Name = L"lblDP2";
+			this->lblDP2->Size = System::Drawing::Size(90, 13);
+			this->lblDP2->TabIndex = 20;
+			this->lblDP2->Text = L"Deuda Pendiente";
+			// 
+			// lblDP1
+			// 
+			this->lblDP1->AutoSize = true;
+			this->lblDP1->Location = System::Drawing::Point(316, 40);
+			this->lblDP1->Name = L"lblDP1";
+			this->lblDP1->Size = System::Drawing::Size(90, 13);
+			this->lblDP1->TabIndex = 19;
+			this->lblDP1->Text = L"Deuda Pendiente";
+			// 
+			// lblPP7
+			// 
+			this->lblPP7->AutoSize = true;
+			this->lblPP7->Location = System::Drawing::Point(191, 185);
+			this->lblPP7->Name = L"lblPP7";
+			this->lblPP7->Size = System::Drawing::Size(106, 13);
+			this->lblPP7->TabIndex = 18;
+			this->lblPP7->Text = L"Promedio Ponderado";
+			// 
+			// lblPP6
+			// 
+			this->lblPP6->AutoSize = true;
+			this->lblPP6->Location = System::Drawing::Point(191, 158);
+			this->lblPP6->Name = L"lblPP6";
+			this->lblPP6->Size = System::Drawing::Size(106, 13);
+			this->lblPP6->TabIndex = 17;
+			this->lblPP6->Text = L"Promedio Ponderado";
+			// 
+			// lblPP5
+			// 
+			this->lblPP5->AutoSize = true;
+			this->lblPP5->Location = System::Drawing::Point(191, 136);
+			this->lblPP5->Name = L"lblPP5";
+			this->lblPP5->Size = System::Drawing::Size(106, 13);
+			this->lblPP5->TabIndex = 16;
+			this->lblPP5->Text = L"Promedio Ponderado";
+			// 
+			// lblPP4
+			// 
+			this->lblPP4->AutoSize = true;
+			this->lblPP4->Location = System::Drawing::Point(191, 108);
+			this->lblPP4->Name = L"lblPP4";
+			this->lblPP4->Size = System::Drawing::Size(106, 13);
+			this->lblPP4->TabIndex = 15;
+			this->lblPP4->Text = L"Promedio Ponderado";
+			// 
+			// lblPP3
+			// 
+			this->lblPP3->AutoSize = true;
+			this->lblPP3->Location = System::Drawing::Point(191, 86);
+			this->lblPP3->Name = L"lblPP3";
+			this->lblPP3->Size = System::Drawing::Size(106, 13);
+			this->lblPP3->TabIndex = 14;
+			this->lblPP3->Text = L"Promedio Ponderado";
+			// 
+			// lblPP2
+			// 
+			this->lblPP2->AutoSize = true;
+			this->lblPP2->Location = System::Drawing::Point(191, 64);
+			this->lblPP2->Name = L"lblPP2";
+			this->lblPP2->Size = System::Drawing::Size(106, 13);
+			this->lblPP2->TabIndex = 13;
+			this->lblPP2->Text = L"Promedio Ponderado";
+			// 
+			// lblPP1
+			// 
+			this->lblPP1->AutoSize = true;
+			this->lblPP1->Location = System::Drawing::Point(191, 40);
+			this->lblPP1->Name = L"lblPP1";
+			this->lblPP1->Size = System::Drawing::Size(106, 13);
+			this->lblPP1->TabIndex = 12;
+			this->lblPP1->Text = L"Promedio Ponderado";
+			// 
+			// lblNombre7
+			// 
+			this->lblNombre7->AutoSize = true;
+			this->lblNombre7->Location = System::Drawing::Point(10, 185);
+			this->lblNombre7->Name = L"lblNombre7";
+			this->lblNombre7->Size = System::Drawing::Size(44, 13);
+			this->lblNombre7->TabIndex = 11;
+			this->lblNombre7->Text = L"Nombre";
+			// 
+			// lblNombre6
+			// 
+			this->lblNombre6->AutoSize = true;
+			this->lblNombre6->Location = System::Drawing::Point(10, 158);
+			this->lblNombre6->Name = L"lblNombre6";
+			this->lblNombre6->Size = System::Drawing::Size(44, 13);
+			this->lblNombre6->TabIndex = 10;
+			this->lblNombre6->Text = L"Nombre";
+			// 
+			// lblNombre5
+			// 
+			this->lblNombre5->AutoSize = true;
+			this->lblNombre5->Location = System::Drawing::Point(10, 136);
+			this->lblNombre5->Name = L"lblNombre5";
+			this->lblNombre5->Size = System::Drawing::Size(44, 13);
+			this->lblNombre5->TabIndex = 9;
+			this->lblNombre5->Text = L"Nombre";
+			// 
+			// lblNombre4
+			// 
+			this->lblNombre4->AutoSize = true;
+			this->lblNombre4->Location = System::Drawing::Point(10, 108);
+			this->lblNombre4->Name = L"lblNombre4";
+			this->lblNombre4->Size = System::Drawing::Size(44, 13);
+			this->lblNombre4->TabIndex = 8;
+			this->lblNombre4->Text = L"Nombre";
+			// 
+			// lblNombre3
+			// 
+			this->lblNombre3->AutoSize = true;
+			this->lblNombre3->Location = System::Drawing::Point(10, 86);
+			this->lblNombre3->Name = L"lblNombre3";
+			this->lblNombre3->Size = System::Drawing::Size(44, 13);
+			this->lblNombre3->TabIndex = 7;
+			this->lblNombre3->Text = L"Nombre";
+			// 
+			// lblNombre2
+			// 
+			this->lblNombre2->AutoSize = true;
+			this->lblNombre2->Location = System::Drawing::Point(10, 64);
+			this->lblNombre2->Name = L"lblNombre2";
+			this->lblNombre2->Size = System::Drawing::Size(44, 13);
+			this->lblNombre2->TabIndex = 6;
+			this->lblNombre2->Text = L"Nombre";
+			// 
+			// lblNombre1
+			// 
+			this->lblNombre1->AutoSize = true;
+			this->lblNombre1->Location = System::Drawing::Point(10, 40);
+			this->lblNombre1->Name = L"lblNombre1";
+			this->lblNombre1->Size = System::Drawing::Size(44, 13);
+			this->lblNombre1->TabIndex = 5;
+			this->lblNombre1->Text = L"Nombre";
+			// 
+			// lblDP
+			// 
+			this->lblDP->AutoSize = true;
+			this->lblDP->Location = System::Drawing::Point(316, 9);
+			this->lblDP->Name = L"lblDP";
+			this->lblDP->Size = System::Drawing::Size(90, 13);
+			this->lblDP->TabIndex = 4;
+			this->lblDP->Text = L"Deuda Pendiente";
+			// 
+			// lblPeso
+			// 
+			this->lblPeso->AutoSize = true;
+			this->lblPeso->Location = System::Drawing::Point(441, 9);
+			this->lblPeso->Name = L"lblPeso";
+			this->lblPeso->Size = System::Drawing::Size(31, 13);
+			this->lblPeso->TabIndex = 3;
+			this->lblPeso->Text = L"Peso";
+			// 
+			// lblPP
+			// 
+			this->lblPP->AutoSize = true;
+			this->lblPP->Location = System::Drawing::Point(191, 9);
+			this->lblPP->Name = L"lblPP";
+			this->lblPP->Size = System::Drawing::Size(106, 13);
+			this->lblPP->TabIndex = 2;
+			this->lblPP->Text = L"Promedio Ponderado";
+			// 
+			// lblFecha
+			// 
+			this->lblFecha->AutoSize = true;
+			this->lblFecha->Location = System::Drawing::Point(490, 9);
+			this->lblFecha->Name = L"lblFecha";
+			this->lblFecha->Size = System::Drawing::Size(119, 13);
+			this->lblFecha->TabIndex = 1;
+			this->lblFecha->Text = L"Fecha de ultima edicion";
 			// 
 			// lblNombre
 			// 
@@ -883,320 +1257,50 @@ private: System::Windows::Forms::Label^  label6;
 			this->label1->TabIndex = 8;
 			this->label1->Text = L"Buscar";
 			// 
-			// label6
-			// 
-			this->label6->AutoSize = true;
-			this->label6->Location = System::Drawing::Point(10, 40);
-			this->label6->Name = L"label6";
-			this->label6->Size = System::Drawing::Size(44, 13);
-			this->label6->TabIndex = 5;
-			this->label6->Text = L"Nombre";
-			// 
-			// label7
-			// 
-			this->label7->AutoSize = true;
-			this->label7->Location = System::Drawing::Point(10, 64);
-			this->label7->Name = L"label7";
-			this->label7->Size = System::Drawing::Size(44, 13);
-			this->label7->TabIndex = 6;
-			this->label7->Text = L"Nombre";
-			// 
-			// label8
-			// 
-			this->label8->AutoSize = true;
-			this->label8->Location = System::Drawing::Point(10, 86);
-			this->label8->Name = L"label8";
-			this->label8->Size = System::Drawing::Size(44, 13);
-			this->label8->TabIndex = 7;
-			this->label8->Text = L"Nombre";
-			// 
-			// label9
-			// 
-			this->label9->AutoSize = true;
-			this->label9->Location = System::Drawing::Point(10, 108);
-			this->label9->Name = L"label9";
-			this->label9->Size = System::Drawing::Size(44, 13);
-			this->label9->TabIndex = 8;
-			this->label9->Text = L"Nombre";
-			// 
-			// label10
-			// 
-			this->label10->AutoSize = true;
-			this->label10->Location = System::Drawing::Point(10, 136);
-			this->label10->Name = L"label10";
-			this->label10->Size = System::Drawing::Size(44, 13);
-			this->label10->TabIndex = 9;
-			this->label10->Text = L"Nombre";
-			// 
-			// label11
-			// 
-			this->label11->AutoSize = true;
-			this->label11->Location = System::Drawing::Point(10, 158);
-			this->label11->Name = L"label11";
-			this->label11->Size = System::Drawing::Size(44, 13);
-			this->label11->TabIndex = 10;
-			this->label11->Text = L"Nombre";
-			// 
-			// label12
-			// 
-			this->label12->AutoSize = true;
-			this->label12->Location = System::Drawing::Point(10, 185);
-			this->label12->Name = L"label12";
-			this->label12->Size = System::Drawing::Size(44, 13);
-			this->label12->TabIndex = 11;
-			this->label12->Text = L"Nombre";
-			// 
-			// label13
-			// 
-			this->label13->AutoSize = true;
-			this->label13->Location = System::Drawing::Point(191, 40);
-			this->label13->Name = L"label13";
-			this->label13->Size = System::Drawing::Size(106, 13);
-			this->label13->TabIndex = 12;
-			this->label13->Text = L"Promedio Ponderado";
-			// 
-			// label14
-			// 
-			this->label14->AutoSize = true;
-			this->label14->Location = System::Drawing::Point(191, 64);
-			this->label14->Name = L"label14";
-			this->label14->Size = System::Drawing::Size(106, 13);
-			this->label14->TabIndex = 13;
-			this->label14->Text = L"Promedio Ponderado";
-			// 
-			// label15
-			// 
-			this->label15->AutoSize = true;
-			this->label15->Location = System::Drawing::Point(191, 86);
-			this->label15->Name = L"label15";
-			this->label15->Size = System::Drawing::Size(106, 13);
-			this->label15->TabIndex = 14;
-			this->label15->Text = L"Promedio Ponderado";
-			// 
-			// label16
-			// 
-			this->label16->AutoSize = true;
-			this->label16->Location = System::Drawing::Point(191, 108);
-			this->label16->Name = L"label16";
-			this->label16->Size = System::Drawing::Size(106, 13);
-			this->label16->TabIndex = 15;
-			this->label16->Text = L"Promedio Ponderado";
-			// 
-			// label17
-			// 
-			this->label17->AutoSize = true;
-			this->label17->Location = System::Drawing::Point(191, 136);
-			this->label17->Name = L"label17";
-			this->label17->Size = System::Drawing::Size(106, 13);
-			this->label17->TabIndex = 16;
-			this->label17->Text = L"Promedio Ponderado";
-			// 
-			// label18
-			// 
-			this->label18->AutoSize = true;
-			this->label18->Location = System::Drawing::Point(191, 158);
-			this->label18->Name = L"label18";
-			this->label18->Size = System::Drawing::Size(106, 13);
-			this->label18->TabIndex = 17;
-			this->label18->Text = L"Promedio Ponderado";
-			// 
-			// label19
-			// 
-			this->label19->AutoSize = true;
-			this->label19->Location = System::Drawing::Point(191, 185);
-			this->label19->Name = L"label19";
-			this->label19->Size = System::Drawing::Size(106, 13);
-			this->label19->TabIndex = 18;
-			this->label19->Text = L"Promedio Ponderado";
-			// 
-			// label20
-			// 
-			this->label20->AutoSize = true;
-			this->label20->Location = System::Drawing::Point(316, 40);
-			this->label20->Name = L"label20";
-			this->label20->Size = System::Drawing::Size(90, 13);
-			this->label20->TabIndex = 19;
-			this->label20->Text = L"Deuda Pendiente";
-			// 
-			// label21
-			// 
-			this->label21->AutoSize = true;
-			this->label21->Location = System::Drawing::Point(316, 64);
-			this->label21->Name = L"label21";
-			this->label21->Size = System::Drawing::Size(90, 13);
-			this->label21->TabIndex = 20;
-			this->label21->Text = L"Deuda Pendiente";
-			// 
-			// label22
-			// 
-			this->label22->AutoSize = true;
-			this->label22->Location = System::Drawing::Point(316, 86);
-			this->label22->Name = L"label22";
-			this->label22->Size = System::Drawing::Size(90, 13);
-			this->label22->TabIndex = 21;
-			this->label22->Text = L"Deuda Pendiente";
-			// 
-			// label23
-			// 
-			this->label23->AutoSize = true;
-			this->label23->Location = System::Drawing::Point(316, 108);
-			this->label23->Name = L"label23";
-			this->label23->Size = System::Drawing::Size(90, 13);
-			this->label23->TabIndex = 22;
-			this->label23->Text = L"Deuda Pendiente";
-			// 
-			// label24
-			// 
-			this->label24->AutoSize = true;
-			this->label24->Location = System::Drawing::Point(316, 136);
-			this->label24->Name = L"label24";
-			this->label24->Size = System::Drawing::Size(90, 13);
-			this->label24->TabIndex = 23;
-			this->label24->Text = L"Deuda Pendiente";
-			// 
-			// label25
-			// 
-			this->label25->AutoSize = true;
-			this->label25->Location = System::Drawing::Point(316, 158);
-			this->label25->Name = L"label25";
-			this->label25->Size = System::Drawing::Size(90, 13);
-			this->label25->TabIndex = 24;
-			this->label25->Text = L"Deuda Pendiente";
-			// 
-			// label27
-			// 
-			this->label27->AutoSize = true;
-			this->label27->Location = System::Drawing::Point(441, 40);
-			this->label27->Name = L"label27";
-			this->label27->Size = System::Drawing::Size(31, 13);
-			this->label27->TabIndex = 26;
-			this->label27->Text = L"Peso";
-			// 
-			// label26
-			// 
-			this->label26->AutoSize = true;
-			this->label26->Location = System::Drawing::Point(316, 185);
-			this->label26->Name = L"label26";
-			this->label26->Size = System::Drawing::Size(90, 13);
-			this->label26->TabIndex = 25;
-			this->label26->Text = L"Deuda Pendiente";
-			// 
-			// label28
-			// 
-			this->label28->AutoSize = true;
-			this->label28->Location = System::Drawing::Point(441, 64);
-			this->label28->Name = L"label28";
-			this->label28->Size = System::Drawing::Size(31, 13);
-			this->label28->TabIndex = 27;
-			this->label28->Text = L"Peso";
-			// 
-			// label29
-			// 
-			this->label29->AutoSize = true;
-			this->label29->Location = System::Drawing::Point(441, 86);
-			this->label29->Name = L"label29";
-			this->label29->Size = System::Drawing::Size(31, 13);
-			this->label29->TabIndex = 28;
-			this->label29->Text = L"Peso";
-			// 
-			// label30
-			// 
-			this->label30->AutoSize = true;
-			this->label30->Location = System::Drawing::Point(441, 108);
-			this->label30->Name = L"label30";
-			this->label30->Size = System::Drawing::Size(31, 13);
-			this->label30->TabIndex = 29;
-			this->label30->Text = L"Peso";
-			// 
-			// label31
-			// 
-			this->label31->AutoSize = true;
-			this->label31->Location = System::Drawing::Point(441, 136);
-			this->label31->Name = L"label31";
-			this->label31->Size = System::Drawing::Size(31, 13);
-			this->label31->TabIndex = 30;
-			this->label31->Text = L"Peso";
-			// 
-			// label32
-			// 
-			this->label32->AutoSize = true;
-			this->label32->Location = System::Drawing::Point(441, 158);
-			this->label32->Name = L"label32";
-			this->label32->Size = System::Drawing::Size(31, 13);
-			this->label32->TabIndex = 31;
-			this->label32->Text = L"Peso";
-			// 
-			// label33
-			// 
-			this->label33->AutoSize = true;
-			this->label33->Location = System::Drawing::Point(441, 185);
-			this->label33->Name = L"label33";
-			this->label33->Size = System::Drawing::Size(31, 13);
-			this->label33->TabIndex = 32;
-			this->label33->Text = L"Peso";
-			// 
-			// label34
-			// 
-			this->label34->AutoSize = true;
-			this->label34->Location = System::Drawing::Point(490, 40);
-			this->label34->Name = L"label34";
-			this->label34->Size = System::Drawing::Size(119, 13);
-			this->label34->TabIndex = 33;
-			this->label34->Text = L"Fecha de ultima edicion";
-			// 
-			// label35
-			// 
-			this->label35->AutoSize = true;
-			this->label35->Location = System::Drawing::Point(490, 64);
-			this->label35->Name = L"label35";
-			this->label35->Size = System::Drawing::Size(119, 13);
-			this->label35->TabIndex = 34;
-			this->label35->Text = L"Fecha de ultima edicion";
-			// 
-			// label36
-			// 
-			this->label36->AutoSize = true;
-			this->label36->Location = System::Drawing::Point(490, 86);
-			this->label36->Name = L"label36";
-			this->label36->Size = System::Drawing::Size(119, 13);
-			this->label36->TabIndex = 35;
-			this->label36->Text = L"Fecha de ultima edicion";
-			// 
-			// label37
-			// 
-			this->label37->AutoSize = true;
-			this->label37->Location = System::Drawing::Point(490, 108);
-			this->label37->Name = L"label37";
-			this->label37->Size = System::Drawing::Size(119, 13);
-			this->label37->TabIndex = 36;
-			this->label37->Text = L"Fecha de ultima edicion";
-			// 
-			// label38
-			// 
-			this->label38->AutoSize = true;
-			this->label38->Location = System::Drawing::Point(490, 136);
-			this->label38->Name = L"label38";
-			this->label38->Size = System::Drawing::Size(119, 13);
-			this->label38->TabIndex = 37;
-			this->label38->Text = L"Fecha de ultima edicion";
-			// 
-			// label39
-			// 
-			this->label39->AutoSize = true;
-			this->label39->Location = System::Drawing::Point(490, 185);
-			this->label39->Name = L"label39";
-			this->label39->Size = System::Drawing::Size(119, 13);
-			this->label39->TabIndex = 38;
-			this->label39->Text = L"Fecha de ultima edicion";
-			// 
-			// label40
-			// 
-			this->label40->AutoSize = true;
-			this->label40->Location = System::Drawing::Point(490, 158);
-			this->label40->Name = L"label40";
-			this->label40->Size = System::Drawing::Size(119, 13);
-			this->label40->TabIndex = 38;
-			this->label40->Text = L"Fecha de ultima edicion";
+			// lblNombre8
+			// 
+			this->lblNombre8->AutoSize = true;
+			this->lblNombre8->Location = System::Drawing::Point(10, 209);
+			this->lblNombre8->Name = L"lblNombre8";
+			this->lblNombre8->Size = System::Drawing::Size(44, 13);
+			this->lblNombre8->TabIndex = 39;
+			this->lblNombre8->Text = L"Nombre";
+			// 
+			// lblPP8
+			// 
+			this->lblPP8->AutoSize = true;
+			this->lblPP8->Location = System::Drawing::Point(191, 209);
+			this->lblPP8->Name = L"lblPP8";
+			this->lblPP8->Size = System::Drawing::Size(106, 13);
+			this->lblPP8->TabIndex = 40;
+			this->lblPP8->Text = L"Promedio Ponderado";
+			// 
+			// lblDP8
+			// 
+			this->lblDP8->AutoSize = true;
+			this->lblDP8->Location = System::Drawing::Point(316, 209);
+			this->lblDP8->Name = L"lblDP8";
+			this->lblDP8->Size = System::Drawing::Size(90, 13);
+			this->lblDP8->TabIndex = 41;
+			this->lblDP8->Text = L"Deuda Pendiente";
+			// 
+			// lblPeso8
+			// 
+			this->lblPeso8->AutoSize = true;
+			this->lblPeso8->Location = System::Drawing::Point(441, 209);
+			this->lblPeso8->Name = L"lblPeso8";
+			this->lblPeso8->Size = System::Drawing::Size(31, 13);
+			this->lblPeso8->TabIndex = 42;
+			this->lblPeso8->Text = L"Peso";
+			// 
+			// lblFecha8
+			// 
+			this->lblFecha8->AutoSize = true;
+			this->lblFecha8->Location = System::Drawing::Point(490, 209);
+			this->lblFecha8->Name = L"lblFecha8";
+			this->lblFecha8->Size = System::Drawing::Size(119, 13);
+			this->lblFecha8->TabIndex = 43;
+			this->lblFecha8->Text = L"Fecha de ultima edicion";
 			// 
 			// MyForm
 			// 
