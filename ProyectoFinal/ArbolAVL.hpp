@@ -79,6 +79,90 @@ private:
 		}
 	}
 
+	////////////////////////////insertar
+	bool _insertarSegunPromedio(Nodo*& nodo, Alumno* alumno) {
+		if (nodo == nullptr) {
+			nodo = new Nodo(alumno);
+			nodo->alumno = alumno;
+		}
+		else if (alumno->getPromedioPonderado() < nodo->alumno->getPromedioPonderado()) {
+			_insertarSegunPromedio(nodo->izq, alumno);
+		}
+		else if (alumno->getPromedioPonderado() >= nodo->alumno->getPromedioPonderado()) {
+			_insertarSegunPromedio(nodo->der, alumno);
+		}
+
+		_balancear(nodo); //Proceso de balanceo del arbol
+
+		return true;
+	}
+	bool _insertarSegunDeuda(Nodo*& nodo, Alumno* alumno) {
+		if (nodo == nullptr) {
+			nodo = new Nodo(alumno);
+			nodo->alumno = alumno;
+		}
+		else if (alumno->getDeudaPendiente() < nodo->alumno->getDeudaPendiente()) {
+			_insertarSegunPromedio(nodo->izq, alumno);
+		}
+		else if (alumno->getDeudaPendiente() >= nodo->alumno->getDeudaPendiente()) {
+			_insertarSegunPromedio(nodo->der, alumno);
+		}
+
+		_balancear(nodo); //Proceso de balanceo del arbol
+
+		return true;
+	}
+	bool _insertarSegunPeso(Nodo*& nodo, Alumno* alumno) {
+		if (nodo == nullptr) {
+			nodo = new Nodo(alumno);
+			nodo->alumno = alumno;
+		}
+		else if (alumno->getPeso() < nodo->alumno->getPeso()) {
+			_insertarSegunPromedio(nodo->izq, alumno);
+		}
+		else if (alumno->getPeso() >= nodo->alumno->getPeso()) {
+			_insertarSegunPromedio(nodo->der, alumno);
+		}
+
+		_balancear(nodo); //Proceso de balanceo del arbol
+
+		return true;
+	}
+	bool _insertarSegunFecha(Nodo*& nodo, Alumno* alumno) { ///FALTA
+		if (nodo == nullptr) {
+			nodo = new Nodo(alumno);
+			nodo->alumno = alumno;
+		}
+		else if (alumno->getPeso() < nodo->alumno->getPeso()) {
+			_insertarSegunPromedio(nodo->izq, alumno);
+		}
+		else if (alumno->getPeso() >= nodo->alumno->getPeso()) {
+			_insertarSegunPromedio(nodo->der, alumno);
+		}
+
+		_balancear(nodo); //Proceso de balanceo del arbol
+
+		return true;
+	}
+	bool _insertarSegunNombre(Nodo*& nodo, Alumno* alumno) { /// AYUDAAAAAAAAAAAAAA
+		if (nodo == nullptr) {
+			nodo = new Nodo(alumno);
+			nodo->alumno = alumno;
+		}
+		else if (alumno->getNombre() < nodo->alumno->getNombre()) {
+			_insertarSegunPromedio(nodo->izq, alumno);
+		}
+		else if (alumno->getNombre() >= nodo->alumno->getNombre()) {
+			_insertarSegunPromedio(nodo->der, alumno);
+		}
+
+		_balancear(nodo); //Proceso de balanceo del arbol
+
+		return true;
+	}
+
+	////////////////////////////////////filtrar
+	
 public:
 	ArbolAVL(){}
 	
