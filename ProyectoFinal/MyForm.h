@@ -127,7 +127,9 @@ namespace ProyectoFinal {
 	private: System::Windows::Forms::ToolStripMenuItem^  pesoToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^  mayorPesoAMenorToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^  menorPesoAMayorToolStripMenuItem;
-private: System::Windows::Forms::TextBox^  textBox1;
+private: System::Windows::Forms::TextBox^  txtBoxNombre;
+
+
 private: System::Windows::Forms::Label^  label1;
 private: System::Windows::Forms::Label^  lblFecha6;
 private: System::Windows::Forms::Label^  lblFecha7;
@@ -257,6 +259,35 @@ private: System::Windows::Forms::Label^  lblNombre8;
 		ArbolAVL* arbol;
 		Alumno** lista;
 private: System::Windows::Forms::Button^  btnReestablecer;
+private: System::Windows::Forms::ToolStripMenuItem^  ultimaLetraNombreToolStripMenuItem;
+private: System::Windows::Forms::ToolStripMenuItem^  aToolStripMenuItem;
+private: System::Windows::Forms::ToolStripMenuItem^  bToolStripMenuItem;
+private: System::Windows::Forms::ToolStripMenuItem^  cToolStripMenuItem;
+private: System::Windows::Forms::ToolStripMenuItem^  dToolStripMenuItem;
+private: System::Windows::Forms::ToolStripMenuItem^  eToolStripMenuItem;
+private: System::Windows::Forms::ToolStripMenuItem^  fToolStripMenuItem;
+private: System::Windows::Forms::ToolStripMenuItem^  gToolStripMenuItem;
+private: System::Windows::Forms::ToolStripMenuItem^  hToolStripMenuItem;
+private: System::Windows::Forms::ToolStripMenuItem^  iToolStripMenuItem;
+private: System::Windows::Forms::ToolStripMenuItem^  jToolStripMenuItem;
+private: System::Windows::Forms::ToolStripMenuItem^  kToolStripMenuItem;
+private: System::Windows::Forms::ToolStripMenuItem^  lToolStripMenuItem;
+private: System::Windows::Forms::ToolStripMenuItem^  mToolStripMenuItem;
+private: System::Windows::Forms::ToolStripMenuItem^  nToolStripMenuItem;
+private: System::Windows::Forms::ToolStripMenuItem^  oToolStripMenuItem;
+private: System::Windows::Forms::ToolStripMenuItem^  pToolStripMenuItem;
+private: System::Windows::Forms::ToolStripMenuItem^  qToolStripMenuItem;
+private: System::Windows::Forms::ToolStripMenuItem^  rToolStripMenuItem;
+private: System::Windows::Forms::ToolStripMenuItem^  sToolStripMenuItem;
+private: System::Windows::Forms::ToolStripMenuItem^  tToolStripMenuItem;
+private: System::Windows::Forms::ToolStripMenuItem^  uToolStripMenuItem;
+private: System::Windows::Forms::ToolStripMenuItem^  vToolStripMenuItem;
+private: System::Windows::Forms::ToolStripMenuItem^  wToolStripMenuItem;
+private: System::Windows::Forms::ToolStripMenuItem^  xToolStripMenuItem;
+private: System::Windows::Forms::ToolStripMenuItem^  yToolStripMenuItem;
+private: System::Windows::Forms::ToolStripMenuItem^  zToolStripMenuItem;
+private: System::Windows::Forms::TextBox^  txtBoxDireccion;
+private: System::Windows::Forms::Label^  lblDireccion;
 		 int k;
 		/// </summary>
 
@@ -380,9 +411,38 @@ private: System::Windows::Forms::Button^  btnReestablecer;
 			this->pesoToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->mayorPesoAMenorToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->menorPesoAMayorToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
+			this->txtBoxNombre = (gcnew System::Windows::Forms::TextBox());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->btnReestablecer = (gcnew System::Windows::Forms::Button());
+			this->ultimaLetraNombreToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->aToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->bToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->cToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->dToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->eToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->fToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->gToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->hToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->iToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->jToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->kToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->lToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->mToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->nToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->oToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->pToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->qToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->rToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->sToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->tToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->uToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->vToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->wToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->xToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->yToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->zToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->txtBoxDireccion = (gcnew System::Windows::Forms::TextBox());
+			this->lblDireccion = (gcnew System::Windows::Forms::Label());
 			this->ArchivosPnl->SuspendLayout();
 			this->OpcMSrp->SuspendLayout();
 			this->SuspendLayout();
@@ -434,9 +494,9 @@ private: System::Windows::Forms::Button^  btnReestablecer;
 			this->ArchivosPnl->Controls->Add(this->lblPP);
 			this->ArchivosPnl->Controls->Add(this->lblFecha);
 			this->ArchivosPnl->Controls->Add(this->lblNombre);
-			this->ArchivosPnl->Location = System::Drawing::Point(24, 44);
+			this->ArchivosPnl->Location = System::Drawing::Point(24, 37);
 			this->ArchivosPnl->Name = L"ArchivosPnl";
-			this->ArchivosPnl->Size = System::Drawing::Size(623, 466);
+			this->ArchivosPnl->Size = System::Drawing::Size(623, 427);
 			this->ArchivosPnl->TabIndex = 1;
 			// 
 			// lblFecha8
@@ -846,9 +906,9 @@ private: System::Windows::Forms::Button^  btnReestablecer;
 			// 
 			// DatosPnl
 			// 
-			this->DatosPnl->Location = System::Drawing::Point(687, 44);
+			this->DatosPnl->Location = System::Drawing::Point(687, 37);
 			this->DatosPnl->Name = L"DatosPnl";
-			this->DatosPnl->Size = System::Drawing::Size(527, 466);
+			this->DatosPnl->Size = System::Drawing::Size(527, 427);
 			this->DatosPnl->TabIndex = 5;
 			// 
 			// OpcMSrp
@@ -865,9 +925,9 @@ private: System::Windows::Forms::Button^  btnReestablecer;
 			// 
 			// filtrarToolStripMenuItem
 			// 
-			this->filtrarToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(4) {
+			this->filtrarToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(5) {
 				this->inicialNombreToolStripMenuItem,
-					this->promedioPToolStripMenuItem1, this->deudaPendienteToolStripMenuItem, this->porMesToolStripMenuItem
+					this->promedioPToolStripMenuItem1, this->deudaPendienteToolStripMenuItem, this->porMesToolStripMenuItem, this->ultimaLetraNombreToolStripMenuItem
 			});
 			this->filtrarToolStripMenuItem->Name = L"filtrarToolStripMenuItem";
 			this->filtrarToolStripMenuItem->Size = System::Drawing::Size(49, 20);
@@ -884,7 +944,7 @@ private: System::Windows::Forms::Button^  btnReestablecer;
 					this->vToolStripMenuItem1, this->wToolStripMenuItem1, this->xToolStripMenuItem1, this->yToolStripMenuItem1, this->zToolStripMenuItem1
 			});
 			this->inicialNombreToolStripMenuItem->Name = L"inicialNombreToolStripMenuItem";
-			this->inicialNombreToolStripMenuItem->Size = System::Drawing::Size(164, 22);
+			this->inicialNombreToolStripMenuItem->Size = System::Drawing::Size(182, 22);
 			this->inicialNombreToolStripMenuItem->Text = L"Inicial Nombre";
 			// 
 			// aToolStripMenuItem1
@@ -1076,7 +1136,7 @@ private: System::Windows::Forms::Button^  btnReestablecer;
 					this->tercioSuperiorToolStripMenuItem1, this->reprobadosToolStripMenuItem1
 			});
 			this->promedioPToolStripMenuItem1->Name = L"promedioPToolStripMenuItem1";
-			this->promedioPToolStripMenuItem1->Size = System::Drawing::Size(164, 22);
+			this->promedioPToolStripMenuItem1->Size = System::Drawing::Size(182, 22);
 			this->promedioPToolStripMenuItem1->Text = L"Promedio P.";
 			// 
 			// quintoSuperiorToolStripMenuItem1
@@ -1107,7 +1167,7 @@ private: System::Windows::Forms::Button^  btnReestablecer;
 					this->noToolStripMenuItem1
 			});
 			this->deudaPendienteToolStripMenuItem->Name = L"deudaPendienteToolStripMenuItem";
-			this->deudaPendienteToolStripMenuItem->Size = System::Drawing::Size(164, 22);
+			this->deudaPendienteToolStripMenuItem->Size = System::Drawing::Size(182, 22);
 			this->deudaPendienteToolStripMenuItem->Text = L"Deuda Pendiente";
 			// 
 			// siToolStripMenuItem1
@@ -1133,7 +1193,7 @@ private: System::Windows::Forms::Button^  btnReestablecer;
 					this->noviembreToolStripMenuItem, this->diciembreToolStripMenuItem
 			});
 			this->porMesToolStripMenuItem->Name = L"porMesToolStripMenuItem";
-			this->porMesToolStripMenuItem->Size = System::Drawing::Size(164, 22);
+			this->porMesToolStripMenuItem->Size = System::Drawing::Size(182, 22);
 			this->porMesToolStripMenuItem->Text = L"Por mes";
 			// 
 			// eneroToolStripMenuItem
@@ -1336,12 +1396,13 @@ private: System::Windows::Forms::Button^  btnReestablecer;
 			this->menorPesoAMayorToolStripMenuItem->Text = L"Menor peso a mayor";
 			this->menorPesoAMayorToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::menorPesoAMayorToolStripMenuItem_Click);
 			// 
-			// textBox1
+			// txtBoxNombre
 			// 
-			this->textBox1->Location = System::Drawing::Point(489, 4);
-			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(158, 20);
-			this->textBox1->TabIndex = 7;
+			this->txtBoxNombre->Location = System::Drawing::Point(489, 4);
+			this->txtBoxNombre->Name = L"txtBoxNombre";
+			this->txtBoxNombre->Size = System::Drawing::Size(158, 20);
+			this->txtBoxNombre->TabIndex = 7;
+			this->txtBoxNombre->TextChanged += gcnew System::EventHandler(this, &MyForm::txtBoxNombre_TextChanged);
 			// 
 			// label1
 			// 
@@ -1354,7 +1415,7 @@ private: System::Windows::Forms::Button^  btnReestablecer;
 			// 
 			// btnReestablecer
 			// 
-			this->btnReestablecer->Location = System::Drawing::Point(362, 2);
+			this->btnReestablecer->Location = System::Drawing::Point(355, 4);
 			this->btnReestablecer->Name = L"btnReestablecer";
 			this->btnReestablecer->Size = System::Drawing::Size(75, 23);
 			this->btnReestablecer->TabIndex = 9;
@@ -1362,14 +1423,202 @@ private: System::Windows::Forms::Button^  btnReestablecer;
 			this->btnReestablecer->UseVisualStyleBackColor = true;
 			this->btnReestablecer->Click += gcnew System::EventHandler(this, &MyForm::btnReestablecer_Click);
 			// 
+			// ultimaLetraNombreToolStripMenuItem
+			// 
+			this->ultimaLetraNombreToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(26) {
+				this->aToolStripMenuItem,
+					this->bToolStripMenuItem, this->cToolStripMenuItem, this->dToolStripMenuItem, this->eToolStripMenuItem, this->fToolStripMenuItem,
+					this->gToolStripMenuItem, this->hToolStripMenuItem, this->iToolStripMenuItem, this->jToolStripMenuItem, this->kToolStripMenuItem,
+					this->lToolStripMenuItem, this->mToolStripMenuItem, this->nToolStripMenuItem, this->oToolStripMenuItem, this->pToolStripMenuItem,
+					this->qToolStripMenuItem, this->rToolStripMenuItem, this->sToolStripMenuItem, this->tToolStripMenuItem, this->uToolStripMenuItem,
+					this->vToolStripMenuItem, this->wToolStripMenuItem, this->xToolStripMenuItem, this->yToolStripMenuItem, this->zToolStripMenuItem
+			});
+			this->ultimaLetraNombreToolStripMenuItem->Name = L"ultimaLetraNombreToolStripMenuItem";
+			this->ultimaLetraNombreToolStripMenuItem->Size = System::Drawing::Size(182, 22);
+			this->ultimaLetraNombreToolStripMenuItem->Text = L"Ultima letra Nombre";
+			// 
+			// aToolStripMenuItem
+			// 
+			this->aToolStripMenuItem->Name = L"aToolStripMenuItem";
+			this->aToolStripMenuItem->Size = System::Drawing::Size(152, 22);
+			this->aToolStripMenuItem->Text = L"a";
+			// 
+			// bToolStripMenuItem
+			// 
+			this->bToolStripMenuItem->Name = L"bToolStripMenuItem";
+			this->bToolStripMenuItem->Size = System::Drawing::Size(152, 22);
+			this->bToolStripMenuItem->Text = L"b";
+			// 
+			// cToolStripMenuItem
+			// 
+			this->cToolStripMenuItem->Name = L"cToolStripMenuItem";
+			this->cToolStripMenuItem->Size = System::Drawing::Size(152, 22);
+			this->cToolStripMenuItem->Text = L"c";
+			// 
+			// dToolStripMenuItem
+			// 
+			this->dToolStripMenuItem->Name = L"dToolStripMenuItem";
+			this->dToolStripMenuItem->Size = System::Drawing::Size(152, 22);
+			this->dToolStripMenuItem->Text = L"d";
+			// 
+			// eToolStripMenuItem
+			// 
+			this->eToolStripMenuItem->Name = L"eToolStripMenuItem";
+			this->eToolStripMenuItem->Size = System::Drawing::Size(152, 22);
+			this->eToolStripMenuItem->Text = L"e";
+			// 
+			// fToolStripMenuItem
+			// 
+			this->fToolStripMenuItem->Name = L"fToolStripMenuItem";
+			this->fToolStripMenuItem->Size = System::Drawing::Size(152, 22);
+			this->fToolStripMenuItem->Text = L"f";
+			// 
+			// gToolStripMenuItem
+			// 
+			this->gToolStripMenuItem->Name = L"gToolStripMenuItem";
+			this->gToolStripMenuItem->Size = System::Drawing::Size(152, 22);
+			this->gToolStripMenuItem->Text = L"g";
+			// 
+			// hToolStripMenuItem
+			// 
+			this->hToolStripMenuItem->Name = L"hToolStripMenuItem";
+			this->hToolStripMenuItem->Size = System::Drawing::Size(152, 22);
+			this->hToolStripMenuItem->Text = L"h";
+			// 
+			// iToolStripMenuItem
+			// 
+			this->iToolStripMenuItem->Name = L"iToolStripMenuItem";
+			this->iToolStripMenuItem->Size = System::Drawing::Size(152, 22);
+			this->iToolStripMenuItem->Text = L"i";
+			// 
+			// jToolStripMenuItem
+			// 
+			this->jToolStripMenuItem->Name = L"jToolStripMenuItem";
+			this->jToolStripMenuItem->Size = System::Drawing::Size(152, 22);
+			this->jToolStripMenuItem->Text = L"j";
+			// 
+			// kToolStripMenuItem
+			// 
+			this->kToolStripMenuItem->Name = L"kToolStripMenuItem";
+			this->kToolStripMenuItem->Size = System::Drawing::Size(152, 22);
+			this->kToolStripMenuItem->Text = L"k";
+			// 
+			// lToolStripMenuItem
+			// 
+			this->lToolStripMenuItem->Name = L"lToolStripMenuItem";
+			this->lToolStripMenuItem->Size = System::Drawing::Size(152, 22);
+			this->lToolStripMenuItem->Text = L"l";
+			// 
+			// mToolStripMenuItem
+			// 
+			this->mToolStripMenuItem->Name = L"mToolStripMenuItem";
+			this->mToolStripMenuItem->Size = System::Drawing::Size(152, 22);
+			this->mToolStripMenuItem->Text = L"m";
+			// 
+			// nToolStripMenuItem
+			// 
+			this->nToolStripMenuItem->Name = L"nToolStripMenuItem";
+			this->nToolStripMenuItem->Size = System::Drawing::Size(152, 22);
+			this->nToolStripMenuItem->Text = L"n";
+			// 
+			// oToolStripMenuItem
+			// 
+			this->oToolStripMenuItem->Name = L"oToolStripMenuItem";
+			this->oToolStripMenuItem->Size = System::Drawing::Size(152, 22);
+			this->oToolStripMenuItem->Text = L"o";
+			// 
+			// pToolStripMenuItem
+			// 
+			this->pToolStripMenuItem->Name = L"pToolStripMenuItem";
+			this->pToolStripMenuItem->Size = System::Drawing::Size(152, 22);
+			this->pToolStripMenuItem->Text = L"p";
+			// 
+			// qToolStripMenuItem
+			// 
+			this->qToolStripMenuItem->Name = L"qToolStripMenuItem";
+			this->qToolStripMenuItem->Size = System::Drawing::Size(152, 22);
+			this->qToolStripMenuItem->Text = L"q";
+			// 
+			// rToolStripMenuItem
+			// 
+			this->rToolStripMenuItem->Name = L"rToolStripMenuItem";
+			this->rToolStripMenuItem->Size = System::Drawing::Size(152, 22);
+			this->rToolStripMenuItem->Text = L"r";
+			// 
+			// sToolStripMenuItem
+			// 
+			this->sToolStripMenuItem->Name = L"sToolStripMenuItem";
+			this->sToolStripMenuItem->Size = System::Drawing::Size(152, 22);
+			this->sToolStripMenuItem->Text = L"s";
+			// 
+			// tToolStripMenuItem
+			// 
+			this->tToolStripMenuItem->Name = L"tToolStripMenuItem";
+			this->tToolStripMenuItem->Size = System::Drawing::Size(152, 22);
+			this->tToolStripMenuItem->Text = L"t";
+			// 
+			// uToolStripMenuItem
+			// 
+			this->uToolStripMenuItem->Name = L"uToolStripMenuItem";
+			this->uToolStripMenuItem->Size = System::Drawing::Size(152, 22);
+			this->uToolStripMenuItem->Text = L"u";
+			// 
+			// vToolStripMenuItem
+			// 
+			this->vToolStripMenuItem->Name = L"vToolStripMenuItem";
+			this->vToolStripMenuItem->Size = System::Drawing::Size(152, 22);
+			this->vToolStripMenuItem->Text = L"v";
+			// 
+			// wToolStripMenuItem
+			// 
+			this->wToolStripMenuItem->Name = L"wToolStripMenuItem";
+			this->wToolStripMenuItem->Size = System::Drawing::Size(152, 22);
+			this->wToolStripMenuItem->Text = L"w";
+			// 
+			// xToolStripMenuItem
+			// 
+			this->xToolStripMenuItem->Name = L"xToolStripMenuItem";
+			this->xToolStripMenuItem->Size = System::Drawing::Size(152, 22);
+			this->xToolStripMenuItem->Text = L"x";
+			// 
+			// yToolStripMenuItem
+			// 
+			this->yToolStripMenuItem->Name = L"yToolStripMenuItem";
+			this->yToolStripMenuItem->Size = System::Drawing::Size(152, 22);
+			this->yToolStripMenuItem->Text = L"y";
+			// 
+			// zToolStripMenuItem
+			// 
+			this->zToolStripMenuItem->Name = L"zToolStripMenuItem";
+			this->zToolStripMenuItem->Size = System::Drawing::Size(152, 22);
+			this->zToolStripMenuItem->Text = L"z";
+			// 
+			// txtBoxDireccion
+			// 
+			this->txtBoxDireccion->Location = System::Drawing::Point(100, 490);
+			this->txtBoxDireccion->Name = L"txtBoxDireccion";
+			this->txtBoxDireccion->Size = System::Drawing::Size(547, 20);
+			this->txtBoxDireccion->TabIndex = 10;
+			// 
+			// lblDireccion
+			// 
+			this->lblDireccion->AutoSize = true;
+			this->lblDireccion->Location = System::Drawing::Point(42, 493);
+			this->lblDireccion->Name = L"lblDireccion";
+			this->lblDireccion->Size = System::Drawing::Size(52, 13);
+			this->lblDireccion->TabIndex = 11;
+			this->lblDireccion->Text = L"Direccion";
+			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(1259, 522);
+			this->Controls->Add(this->lblDireccion);
+			this->Controls->Add(this->txtBoxDireccion);
 			this->Controls->Add(this->btnReestablecer);
 			this->Controls->Add(this->label1);
-			this->Controls->Add(this->textBox1);
+			this->Controls->Add(this->txtBoxNombre);
 			this->Controls->Add(this->OpcMSrp);
 			this->Controls->Add(this->DatosPnl);
 			this->Controls->Add(this->ArchivosPnl);
@@ -1816,6 +2065,19 @@ private: System::Void yToolStripMenuItem1_Click(System::Object^  sender, System:
 	reestablecer();
 	OcultarFiltros(FiltrarInicial("Y"));
 	imprimir();
+}
+
+private: System::Void txtBoxNombre_TextChanged(System::Object^  sender, System::EventArgs^  e) {
+	reestablecer();
+	for (int i = 0; i < 8; i++) {
+		if (gcnew String(lista[i]->getNombre().c_str()) == txtBoxNombre->Text) {
+			OcultarFiltros(1);
+			lblNombre1->Text = gcnew String(lista[i]->getNombre().c_str());
+			lblPP1->Text = gcnew String(lista[i]->getPromedioPonderado() + "");
+			lblDP1->Text = gcnew String(lista[i]->getDeudaPendiente() + "");
+			lblPeso1->Text = gcnew String(lista[i]->getPeso() + "");
+		}
+	}
 }
 };
 }
