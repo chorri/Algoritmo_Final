@@ -57,7 +57,7 @@ public:
 class Archivo
 {
 public:
-	Alumno alumnoAsignado;
+	Alumno* alumnoAsignado;
 	string nombreDelArchivo;
 	int peso;
 	time_t uEdicion;
@@ -66,10 +66,11 @@ public:
 		nombreDelArchivo = "";
 		peso = 0;
 	}
-	Archivo(string n, int p,time_t uE) {
+	Archivo(string n, int p, time_t uE, Alumno* _alumno) {
 		nombreDelArchivo = n;
 		peso = p;
 		uEdicion = uE;
+		alumnoAsignado = _alumno;
 	}
 	~Archivo() {
 
