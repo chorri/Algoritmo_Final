@@ -158,7 +158,7 @@ private:
 
 		return true;
 	}
-	bool _insertarSegunNombre(Nodo*& nodo, Alumno* alumno) { /// AYUDAAAAAAAAAAAAAA
+	bool _insertarSegunNombre(Nodo*& nodo, Alumno* alumno) {
 		if (nodo == nullptr) {
 			nodo = new Nodo(alumno);
 			nodo->alumno = alumno;
@@ -174,12 +174,56 @@ private:
 
 		return true;
 	}
+	bool _insertarSegunInicial(Nodo*& nodo, Alumno* alumno, string letra) {
+		if (nodo == nullptr) {
+			nodo = new Nodo(alumno);
+			nodo->alumno = alumno;
+		}
+		else if (alumno->getNombre() >= letra && alumno->getNombre() < _siguienteLetra(letra)) {
+			if (nodo->alumno->getNombre() >= letra && nodo->alumno->getNombre() < _siguienteLetra(letra)) {
+				_insertarSegunNombre(nodo, alumno);
+			}
+			else _insertarSegunInicial(nodo->izq, alumno, letra);
+		}
+		else if (nodo->alumno->getNombre() >= letra && nodo->alumno->getNombre() < _siguienteLetra(letra)) {
+			_insertarSegunInicial(nodo->der, alumno, letra);
+		}
+		else _insertarSegunNombre(nodo, alumno);
+		
 
+		_balancear(nodo); //Proceso de balanceo del arbol
+
+		return true;
+	}
+
+	string _siguienteLetra(string letra) {
+		if (letra == "A") return "B";
+		if (letra == "B") return "C";
+		if (letra == "C") return "D";
+		if (letra == "D") return "E";
+		if (letra == "E") return "F";
+		if (letra == "F") return "G";
+		if (letra == "G") return "H";
+		if (letra == "H") return "I";
+		if (letra == "I") return "J";
+		if (letra == "J") return "K";
+		if (letra == "K") return "L";
+		if (letra == "L") return "M";
+		if (letra == "M") return "N";
+		if (letra == "N") return "O";
+		if (letra == "O") return "P";
+		if (letra == "P") return "Q";
+		if (letra == "Q") return "R";
+		if (letra == "R") return "S";
+		if (letra == "S") return "T";
+		if (letra == "T") return "U";
+		if (letra == "U") return "V";
+		if (letra == "V") return "X";
+		if (letra == "X") return "Y";
+		if (letra == "Y") return "Z";
+		if (letra == "Z") return "[";
+	}
 	////////////////////////////////////eliminar
-
-	//void _Eliminar 
-
-
 	void _eliminar(Nodo*& nodo) {
 		if (nodo != nullptr) {
 			_eliminar(nodo->izq);
@@ -233,7 +277,12 @@ public:
 	void insertarSegunNombre(Alumno* alumno) {
 		_insertarSegunNombre(raiz, alumno);
 	}
-	
+	void insertarSegunInicial(Alumno* alumno, string letra) {
+		_insertarSegunInicial(raiz, alumno, letra);
+	}
+	string SiguienteLetra(string letra) {
+		return _siguienteLetra(letra);
+	}
 
 };
 
