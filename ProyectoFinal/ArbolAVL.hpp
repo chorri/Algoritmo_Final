@@ -4,6 +4,7 @@
 #include "NodoAVL.hpp"
 #include <functional>
 
+
 class ArbolAVL
 {
 private:
@@ -162,7 +163,13 @@ private:
 	}
 
 	////////////////////////////////////eliminar
-
+	void _eliminar(Nodo*& nodo) {
+		if (nodo != nullptr) {
+			_eliminar(nodo->izq);
+			_eliminar(nodo->der);
+			nodo = nullptr;
+		}
+	}
 	
 public:
 	ArbolAVL(){}

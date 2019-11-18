@@ -50,7 +50,6 @@ int main() {
 
 	cout << "test" << endl;
 
-
 	Application::Run(gcnew MyForm);
 
 	return 0;
