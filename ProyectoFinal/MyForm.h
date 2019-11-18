@@ -256,7 +256,8 @@ private: System::Windows::Forms::Label^  lblNombre8;
 		/// Variable del diseñador necesaria.
 		ArbolAVL* arbol;
 		Alumno** lista;
-		int k;
+private: System::Windows::Forms::Button^  btnReestablecer;
+		 int k;
 		/// </summary>
 
 
@@ -381,6 +382,7 @@ private: System::Windows::Forms::Label^  lblNombre8;
 			this->menorPesoAMayorToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->btnReestablecer = (gcnew System::Windows::Forms::Button());
 			this->ArchivosPnl->SuspendLayout();
 			this->OpcMSrp->SuspendLayout();
 			this->SuspendLayout();
@@ -1056,18 +1058,21 @@ private: System::Windows::Forms::Label^  lblNombre8;
 			this->quintoSuperiorToolStripMenuItem1->Name = L"quintoSuperiorToolStripMenuItem1";
 			this->quintoSuperiorToolStripMenuItem1->Size = System::Drawing::Size(158, 22);
 			this->quintoSuperiorToolStripMenuItem1->Text = L"Quinto Superior";
+			this->quintoSuperiorToolStripMenuItem1->Click += gcnew System::EventHandler(this, &MyForm::quintoSuperiorToolStripMenuItem1_Click);
 			// 
 			// tercioSuperiorToolStripMenuItem1
 			// 
 			this->tercioSuperiorToolStripMenuItem1->Name = L"tercioSuperiorToolStripMenuItem1";
 			this->tercioSuperiorToolStripMenuItem1->Size = System::Drawing::Size(158, 22);
 			this->tercioSuperiorToolStripMenuItem1->Text = L"Tercio Superior";
+			this->tercioSuperiorToolStripMenuItem1->Click += gcnew System::EventHandler(this, &MyForm::tercioSuperiorToolStripMenuItem1_Click);
 			// 
 			// reprobadosToolStripMenuItem1
 			// 
 			this->reprobadosToolStripMenuItem1->Name = L"reprobadosToolStripMenuItem1";
 			this->reprobadosToolStripMenuItem1->Size = System::Drawing::Size(158, 22);
 			this->reprobadosToolStripMenuItem1->Text = L"Reprobados";
+			this->reprobadosToolStripMenuItem1->Click += gcnew System::EventHandler(this, &MyForm::reprobadosToolStripMenuItem1_Click);
 			// 
 			// deudaPendienteToolStripMenuItem
 			// 
@@ -1082,14 +1087,16 @@ private: System::Windows::Forms::Label^  lblNombre8;
 			// siToolStripMenuItem1
 			// 
 			this->siToolStripMenuItem1->Name = L"siToolStripMenuItem1";
-			this->siToolStripMenuItem1->Size = System::Drawing::Size(90, 22);
+			this->siToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
 			this->siToolStripMenuItem1->Text = L"Si";
+			this->siToolStripMenuItem1->Click += gcnew System::EventHandler(this, &MyForm::siToolStripMenuItem1_Click);
 			// 
 			// noToolStripMenuItem1
 			// 
 			this->noToolStripMenuItem1->Name = L"noToolStripMenuItem1";
-			this->noToolStripMenuItem1->Size = System::Drawing::Size(90, 22);
+			this->noToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
 			this->noToolStripMenuItem1->Text = L"No";
+			this->noToolStripMenuItem1->Click += gcnew System::EventHandler(this, &MyForm::noToolStripMenuItem1_Click);
 			// 
 			// porMesToolStripMenuItem
 			// 
@@ -1319,11 +1326,22 @@ private: System::Windows::Forms::Label^  lblNombre8;
 			this->label1->TabIndex = 8;
 			this->label1->Text = L"Buscar";
 			// 
+			// btnReestablecer
+			// 
+			this->btnReestablecer->Location = System::Drawing::Point(362, 2);
+			this->btnReestablecer->Name = L"btnReestablecer";
+			this->btnReestablecer->Size = System::Drawing::Size(75, 23);
+			this->btnReestablecer->TabIndex = 9;
+			this->btnReestablecer->Text = L"Reestablecer";
+			this->btnReestablecer->UseVisualStyleBackColor = true;
+			this->btnReestablecer->Click += gcnew System::EventHandler(this, &MyForm::btnReestablecer_Click);
+			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(1259, 522);
+			this->Controls->Add(this->btnReestablecer);
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->textBox1);
 			this->Controls->Add(this->OpcMSrp);
@@ -1359,7 +1377,11 @@ private: System::Windows::Forms::Label^  lblNombre8;
 			Descendente(nodo->izq);
 		}
 
+		//////////////////////////////////Filtrar
+		
 
+
+		//////////////////////////////////Ordenar
 		void ordenarPesoAsc() {
 			arbol->Eliminar();
 			for (int i = 0; i < 8; i++) {
@@ -1466,6 +1488,74 @@ private: System::Windows::Forms::Label^  lblNombre8;
 			//Fecha
 
 		}
+		void OcultarFiltros(int p) {
+			if (p < 1) {
+				lblNombre1->Visible = false;
+				lblPP1->Visible = false;
+				lblDP1->Visible = false;
+				lblPeso1->Visible = false;
+				lblFecha1->Visible = false;
+			}
+			if (p < 2) {
+				lblNombre2->Visible = false;
+				lblPP2->Visible = false;
+				lblDP2->Visible = false;
+				lblPeso2->Visible = false;
+				lblFecha2->Visible = false;
+			}
+			if (p < 3) {
+				lblNombre3->Visible = false;
+				lblPP3->Visible = false;
+				lblDP3->Visible = false;
+				lblPeso3->Visible = false;
+				lblFecha3->Visible = false;
+			}
+			if (p < 4) {
+				lblNombre4->Visible = false;
+				lblPP4->Visible = false;
+				lblDP4->Visible = false;
+				lblPeso4->Visible = false;
+				lblFecha4->Visible = false;
+			}
+			if (p < 5) {
+				lblNombre5->Visible = false;
+				lblPP5->Visible = false;
+				lblDP5->Visible = false;
+				lblPeso5->Visible = false;
+				lblFecha5->Visible = false;
+			}
+			if (p < 6) {
+				lblNombre6->Visible = false;
+				lblPP6->Visible = false;
+				lblDP6->Visible = false;
+				lblPeso6->Visible = false;
+				lblFecha6->Visible = false;
+			}
+			if (p < 7) {
+				lblNombre7->Visible = false;
+				lblPP7->Visible = false;
+				lblDP7->Visible = false;
+				lblPeso7->Visible = false;
+				lblFecha7->Visible = false;
+			}
+			if (p < 8) {
+				lblNombre8->Visible = false;
+				lblPP8->Visible = false;
+				lblDP8->Visible = false;
+				lblPeso8->Visible = false;
+				lblFecha8->Visible = false;
+			}
+		}
+		void reestablecer() {
+			lblNombre1->Visible = true;     lblPP1->Visible = true; lblDP1->Visible = true; lblPeso1->Visible = true; lblFecha1->Visible = true;
+			lblNombre2->Visible = true;     lblPP2->Visible = true; lblDP2->Visible = true; lblPeso2->Visible = true; lblFecha2->Visible = true;
+			lblNombre3->Visible = true;     lblPP3->Visible = true; lblDP3->Visible = true; lblPeso3->Visible = true; lblFecha3->Visible = true;
+			lblNombre4->Visible = true;     lblPP4->Visible = true; lblDP4->Visible = true; lblPeso4->Visible = true; lblFecha4->Visible = true;
+			lblNombre5->Visible = true;     lblPP5->Visible = true; lblDP5->Visible = true; lblPeso5->Visible = true; lblFecha5->Visible = true;
+			lblNombre6->Visible = true;     lblPP6->Visible = true; lblDP6->Visible = true; lblPeso6->Visible = true; lblFecha6->Visible = true;
+			lblNombre7->Visible = true;     lblPP7->Visible = true; lblDP7->Visible = true; lblPeso7->Visible = true; lblFecha7->Visible = true;
+			lblNombre8->Visible = true;     lblPP8->Visible = true; lblDP8->Visible = true; lblPeso8->Visible = true; lblFecha8->Visible = true;
+		}
 
 
 
@@ -1505,6 +1595,59 @@ private: System::Void ordenAlfabeticoAcendenteToolStripMenuItem_Click(System::Ob
 private: System::Void ordenAlfabeticoDescendenteToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
 	ordenarNombreDes();
 	imprimir();
+}
+private: System::Void quintoSuperiorToolStripMenuItem1_Click(System::Object^  sender, System::EventArgs^  e) {
+	reestablecer();
+	ordenarPromedioDes();
+	OcultarFiltros(8 / 5 + 1);
+	imprimir();
+
+}
+private: System::Void tercioSuperiorToolStripMenuItem1_Click(System::Object^  sender, System::EventArgs^  e) {
+	reestablecer();
+	ordenarPromedioDes();
+	OcultarFiltros(8 / 3 + 1);
+
+	imprimir();
+}
+
+private: System::Void reprobadosToolStripMenuItem1_Click(System::Object^  sender, System::EventArgs^  e) {
+	reestablecer();
+	ordenarPromedioAsc();
+	int p;
+	for (int i = 0; i < 8; i++) {
+		if (lista[i]->getPromedioPonderado() <= 12.49)
+			p++;
+	}
+	OcultarFiltros(p);
+	imprimir();
+}
+private: System::Void btnReestablecer_Click(System::Object^  sender, System::EventArgs^  e) {
+	reestablecer();
+}
+private: System::Void siToolStripMenuItem1_Click(System::Object^  sender, System::EventArgs^  e) {
+	reestablecer();
+	ordenarDeudaDes();
+	int p;
+	for (int i = 0; i < 8; i++) {
+		if (lista[i]->getDeudaPendiente() > 0)
+			p++;
+	}
+	OcultarFiltros(p);
+	imprimir();
+
+}
+private: System::Void noToolStripMenuItem1_Click(System::Object^  sender, System::EventArgs^  e) {
+	reestablecer();
+	ordenarDeudaAsc();
+	int p;
+	for (int i = 0; i < 8; i++) {
+		if (lista[i]->getDeudaPendiente() == 0)
+			p++;
+	}
+	OcultarFiltros(p);
+	imprimir();
+
 }
 };
 }
