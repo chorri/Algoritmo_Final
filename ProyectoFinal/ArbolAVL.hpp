@@ -116,10 +116,10 @@ private:
 			nodo->alumno = alumno;
 		}
 		else if (alumno->getDeudaPendiente() < nodo->alumno->getDeudaPendiente()) {
-			_insertarSegunPromedio(nodo->izq, alumno);
+			_insertarSegunDeuda(nodo->izq, alumno);
 		}
 		else if (alumno->getDeudaPendiente() >= nodo->alumno->getDeudaPendiente()) {
-			_insertarSegunPromedio(nodo->der, alumno);
+			_insertarSegunDeuda(nodo->der, alumno);
 		}
 
 		_balancear(nodo); //Proceso de balanceo del arbol
@@ -132,10 +132,10 @@ private:
 			nodo->alumno = alumno;
 		}
 		else if (alumno->getPeso() < nodo->alumno->getPeso()) {
-			_insertarSegunPromedio(nodo->izq, alumno);
+			_insertarSegunPeso(nodo->izq, alumno);
 		}
 		else if (alumno->getPeso() >= nodo->alumno->getPeso()) {
-			_insertarSegunPromedio(nodo->der, alumno);
+			_insertarSegunPeso(nodo->der, alumno);
 		}
 
 		_balancear(nodo); //Proceso de balanceo del arbol
@@ -148,10 +148,10 @@ private:
 			nodo->alumno = alumno;
 		}
 		else if (alumno->getPeso() < nodo->alumno->getPeso()) {
-			_insertarSegunPromedio(nodo->izq, alumno);
+			_insertarSegunFecha(nodo->izq, alumno);
 		}
 		else if (alumno->getPeso() >= nodo->alumno->getPeso()) {
-			_insertarSegunPromedio(nodo->der, alumno);
+			_insertarSegunFecha(nodo->der, alumno);
 		}
 
 		_balancear(nodo); //Proceso de balanceo del arbol
@@ -164,10 +164,10 @@ private:
 			nodo->alumno = alumno;
 		}
 		else if (alumno->getNombre() < nodo->alumno->getNombre()) {
-			_insertarSegunPromedio(nodo->izq, alumno);
+			_insertarSegunNombre(nodo->izq, alumno);
 		}
 		else if (alumno->getNombre() >= nodo->alumno->getNombre()) {
-			_insertarSegunPromedio(nodo->der, alumno);
+			_insertarSegunNombre(nodo->der, alumno);
 		}
 
 		_balancear(nodo); //Proceso de balanceo del arbol

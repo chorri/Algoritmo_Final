@@ -1222,12 +1222,14 @@ private: System::Windows::Forms::Label^  lblNombre8;
 			this->ordenAlfabeticoAcendenteToolStripMenuItem->Name = L"ordenAlfabeticoAcendenteToolStripMenuItem";
 			this->ordenAlfabeticoAcendenteToolStripMenuItem->Size = System::Drawing::Size(232, 22);
 			this->ordenAlfabeticoAcendenteToolStripMenuItem->Text = L"Orden alfabetico acendente";
+			this->ordenAlfabeticoAcendenteToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::ordenAlfabeticoAcendenteToolStripMenuItem_Click);
 			// 
 			// ordenAlfabeticoDescendenteToolStripMenuItem
 			// 
 			this->ordenAlfabeticoDescendenteToolStripMenuItem->Name = L"ordenAlfabeticoDescendenteToolStripMenuItem";
 			this->ordenAlfabeticoDescendenteToolStripMenuItem->Size = System::Drawing::Size(232, 22);
 			this->ordenAlfabeticoDescendenteToolStripMenuItem->Text = L"Orden alfabetico descendente";
+			this->ordenAlfabeticoDescendenteToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::ordenAlfabeticoDescendenteToolStripMenuItem_Click);
 			// 
 			// promedioPonderadoToolStripMenuItem
 			// 
@@ -1268,12 +1270,14 @@ private: System::Windows::Forms::Label^  lblNombre8;
 			this->mayorDeudaAMenorToolStripMenuItem->Name = L"mayorDeudaAMenorToolStripMenuItem";
 			this->mayorDeudaAMenorToolStripMenuItem->Size = System::Drawing::Size(191, 22);
 			this->mayorDeudaAMenorToolStripMenuItem->Text = L"Mayor deuda a menor";
+			this->mayorDeudaAMenorToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::mayorDeudaAMenorToolStripMenuItem_Click);
 			// 
 			// menorDeudaAMayorToolStripMenuItem
 			// 
 			this->menorDeudaAMayorToolStripMenuItem->Name = L"menorDeudaAMayorToolStripMenuItem";
 			this->menorDeudaAMayorToolStripMenuItem->Size = System::Drawing::Size(191, 22);
 			this->menorDeudaAMayorToolStripMenuItem->Text = L"Menor deuda a mayor";
+			this->menorDeudaAMayorToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::menorDeudaAMayorToolStripMenuItem_Click);
 			// 
 			// pesoToolStripMenuItem
 			// 
@@ -1290,12 +1294,14 @@ private: System::Windows::Forms::Label^  lblNombre8;
 			this->mayorPesoAMenorToolStripMenuItem->Name = L"mayorPesoAMenorToolStripMenuItem";
 			this->mayorPesoAMenorToolStripMenuItem->Size = System::Drawing::Size(183, 22);
 			this->mayorPesoAMenorToolStripMenuItem->Text = L"Mayor peso a menor";
+			this->mayorPesoAMenorToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::mayorPesoAMenorToolStripMenuItem_Click);
 			// 
 			// menorPesoAMayorToolStripMenuItem
 			// 
 			this->menorPesoAMayorToolStripMenuItem->Name = L"menorPesoAMayorToolStripMenuItem";
 			this->menorPesoAMayorToolStripMenuItem->Size = System::Drawing::Size(183, 22);
 			this->menorPesoAMayorToolStripMenuItem->Text = L"Menor peso a mayor";
+			this->menorPesoAMayorToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::menorPesoAMayorToolStripMenuItem_Click);
 			// 
 			// textBox1
 			// 
@@ -1347,10 +1353,60 @@ private: System::Windows::Forms::Label^  lblNombre8;
 
 		void Descendente(Nodo* nodo) {
 			if (nodo == nullptr) return;
-			Descendente(nodo->izq);
+			Descendente(nodo->der);
 			lista[k] = nodo->alumno;
 			k++;
-			Descendente(nodo->der);
+			Descendente(nodo->izq);
+		}
+
+
+		void ordenarPesoAsc() {
+			arbol->Eliminar();
+			for (int i = 0; i < 8; i++) {
+				arbol->insertarSegunPeso(lista[i]);
+			}
+			Ascendente(arbol->getRaiz());
+			k = 0;
+		}
+		void ordenarNombreDes() {
+			arbol->Eliminar();
+			for (int i = 0; i < 8; i++) {
+				arbol->insertarSegunNombre(lista[i]);
+			}
+			Descendente(arbol->getRaiz());
+			k = 0;
+		}
+		void ordenarNombreAsc() {
+			arbol->Eliminar();
+			for (int i = 0; i < 8; i++) {
+				arbol->insertarSegunNombre(lista[i]);
+			}
+			Ascendente(arbol->getRaiz());
+			k = 0;
+		}
+		void ordenarPesoDes() {
+			arbol->Eliminar();
+			for (int i = 0; i < 8; i++) {
+				arbol->insertarSegunPeso(lista[i]);
+			}
+			Descendente(arbol->getRaiz());
+			k = 0;
+		}
+		void ordenarDeudaAsc() {
+			arbol->Eliminar();
+			for (int i = 0; i < 8; i++) {
+				arbol->insertarSegunDeuda(lista[i]);
+			}
+			Ascendente(arbol->getRaiz());
+			k = 0;
+		}
+		void ordenarDeudaDes() {
+			arbol->Eliminar();
+			for (int i = 0; i < 8; i++) {
+				arbol->insertarSegunDeuda(lista[i]);
+			}
+			Descendente(arbol->getRaiz());
+			k = 0;
 		}
 
 		void ordenarPromedioAsc() {
@@ -1362,6 +1418,14 @@ private: System::Windows::Forms::Label^  lblNombre8;
 			k = 0;
 		}
 
+		void ordenarPromedioDes() {
+			arbol->Eliminar();
+			for (int i = 0; i < 8; i++) {
+				arbol->insertarSegunPromedio(lista[i]);
+			}
+			Descendente(arbol->getRaiz());
+			k = 0;
+		}
 		void imprimir() {
 			//Nombre
 			lblNombre1->Text = gcnew String(lista[0]->getNombre().c_str());
@@ -1406,14 +1470,40 @@ private: System::Windows::Forms::Label^  lblNombre8;
 
 
 
-private: System::Void mayorNotaAMenorToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
-	///////////
-}
+
 private: System::Void MyForm_Load(System::Object^  sender, System::EventArgs^  e) {
 	imprimir();
 }
+private: System::Void mayorNotaAMenorToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
+	 ordenarPromedioDes();
+	 imprimir();
+}
 private: System::Void menorNotaAMayorToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
 	ordenarPromedioAsc();
+	imprimir();
+}
+private: System::Void mayorDeudaAMenorToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
+	ordenarDeudaDes();
+	imprimir();
+}
+private: System::Void menorDeudaAMayorToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
+	ordenarDeudaAsc();
+	imprimir();
+}
+private: System::Void mayorPesoAMenorToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
+	ordenarPesoDes();
+	imprimir();
+}
+private: System::Void menorPesoAMayorToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
+	ordenarPesoAsc();
+	imprimir();
+}
+private: System::Void ordenAlfabeticoAcendenteToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
+	ordenarNombreAsc();
+	imprimir();
+}
+private: System::Void ordenAlfabeticoDescendenteToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
+	ordenarNombreDes();
 	imprimir();
 }
 };
