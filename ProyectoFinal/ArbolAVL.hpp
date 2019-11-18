@@ -188,7 +188,7 @@ private:
 		}
 	}
 
-	
+
 public:
 	ArbolAVL(){
 		raiz = nullptr;
@@ -233,6 +233,7 @@ public:
 	void insertarSegunNombre(Alumno* alumno) {
 		_insertarSegunNombre(raiz, alumno);
 	}
+	
 
 };
 
