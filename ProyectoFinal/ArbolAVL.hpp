@@ -86,8 +86,9 @@ private:
 			nodo = new Nodo(alumno);
 			nodo->alumno = alumno;
 		}
-		
+		else
 		_insertar(nodo->der, alumno);
+
 		_balancear(nodo); //Proceso de balanceo del arbol
 
 		return true;
@@ -189,8 +190,14 @@ private:
 
 	
 public:
-	ArbolAVL(){}
+	ArbolAVL(){
+		raiz = nullptr;
+	}
 	
+	Nodo* getRaiz() {
+		return raiz;
+	}
+
 	int cantidad() {
 		return _cantidad(raiz);
 	}
@@ -207,23 +214,23 @@ public:
 		_insertar(raiz, alumno);
 	}
 
-	/*bool Eliminar(Alumno* alumno) {
-		return _Eliminar(raiz, alumno);
-	}*/
+	void Eliminar() {
+		 _eliminar(raiz);
+	}
 
-	bool insertarSegunPromedio(Alumno* alumno) {
+	void insertarSegunPromedio(Alumno* alumno) {
 		_insertarSegunPromedio(raiz, alumno);
 	}
-	bool insertarSegunDeuda(Alumno* alumno) {
+	void insertarSegunDeuda(Alumno* alumno) {
 		_insertarSegunDeuda(raiz, alumno);
 	}
-	bool insertarSegunPeso(Alumno* alumno) {
+	void insertarSegunPeso(Alumno* alumno) {
 		_insertarSegunPeso(raiz, alumno);
 	}
-	bool insertarSegunFecha(Alumno* alumno) {
+	void insertarSegunFecha(Alumno* alumno) {
 		_insertarSegunFecha(raiz, alumno);
 	}
-	bool insertarSegunNombre(Alumno* alumno) {
+	void insertarSegunNombre(Alumno* alumno) {
 		_insertarSegunNombre(raiz, alumno);
 	}
 

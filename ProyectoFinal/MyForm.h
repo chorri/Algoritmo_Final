@@ -21,8 +21,12 @@ namespace ProyectoFinal {
 			InitializeComponent();
 			//
 			//TODO: agregar código de constructor aquí
+			k = 0;
 			arbol = new ArbolAVL();
 			this->lista = lista;
+			for (int i = 0; i < 8; i++) {
+				arbol->insertar(lista[i]);
+			}
 			//
 		}
 
@@ -252,6 +256,7 @@ private: System::Windows::Forms::Label^  lblNombre8;
 		/// Variable del diseñador necesaria.
 		ArbolAVL* arbol;
 		Alumno** lista;
+		int k;
 		/// </summary>
 
 
@@ -1246,6 +1251,7 @@ private: System::Windows::Forms::Label^  lblNombre8;
 			this->menorNotaAMayorToolStripMenuItem->Name = L"menorNotaAMayorToolStripMenuItem";
 			this->menorNotaAMayorToolStripMenuItem->Size = System::Drawing::Size(182, 22);
 			this->menorNotaAMayorToolStripMenuItem->Text = L"Menor nota a mayor";
+			this->menorNotaAMayorToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::menorNotaAMayorToolStripMenuItem_Click);
 			// 
 			// deudaPendienteToolStripMenuItem1
 			// 
@@ -1331,7 +1337,30 @@ private: System::Windows::Forms::Label^  lblNombre8;
 		}
 #pragma endregion
 	
-	
+		void Ascendente(Nodo* nodo) {
+			if (nodo == nullptr) return;
+			Ascendente(nodo->izq);
+			lista[k] = nodo->alumno;
+			k++;
+			Ascendente(nodo->der);
+		}
+
+		void Descendente(Nodo* nodo) {
+			if (nodo == nullptr) return;
+			Descendente(nodo->izq);
+			lista[k] = nodo->alumno;
+			k++;
+			Descendente(nodo->der);
+		}
+
+		void ordenarPromedioAsc() {
+			arbol->Eliminar();
+			for (int i = 0; i < 8; i++) {
+				arbol->insertarSegunPromedio(lista[i]);
+			}
+			Ascendente(arbol->getRaiz());
+			k = 0;
+		}
 
 		void imprimir() {
 			//Nombre
@@ -1381,6 +1410,10 @@ private: System::Void mayorNotaAMenorToolStripMenuItem_Click(System::Object^  se
 	///////////
 }
 private: System::Void MyForm_Load(System::Object^  sender, System::EventArgs^  e) {
+	imprimir();
+}
+private: System::Void menorNotaAMayorToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
+	ordenarPromedioAsc();
 	imprimir();
 }
 };
