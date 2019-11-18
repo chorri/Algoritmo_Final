@@ -1,4 +1,5 @@
 #pragma once
+#include "ArbolAVL.hpp"
 
 namespace ProyectoFinal {
 
@@ -15,11 +16,13 @@ namespace ProyectoFinal {
 	public ref class MyForm : public System::Windows::Forms::Form
 	{
 	public:
-		MyForm(void)
+		MyForm(Alumno** lista)
 		{
 			InitializeComponent();
 			//
 			//TODO: agregar código de constructor aquí
+			arbol = new ArbolAVL();
+			this->lista = lista;
 			//
 		}
 
@@ -247,6 +250,8 @@ private: System::Windows::Forms::Label^  lblNombre8;
 	private:
 		/// <summary>
 		/// Variable del diseñador necesaria.
+		ArbolAVL* arbol;
+		Alumno** lista;
 		/// </summary>
 
 
@@ -878,157 +883,157 @@ private: System::Windows::Forms::Label^  lblNombre8;
 			// aToolStripMenuItem1
 			// 
 			this->aToolStripMenuItem1->Name = L"aToolStripMenuItem1";
-			this->aToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->aToolStripMenuItem1->Size = System::Drawing::Size(85, 22);
 			this->aToolStripMenuItem1->Text = L"A";
 			// 
 			// bToolStripMenuItem1
 			// 
 			this->bToolStripMenuItem1->Name = L"bToolStripMenuItem1";
-			this->bToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->bToolStripMenuItem1->Size = System::Drawing::Size(85, 22);
 			this->bToolStripMenuItem1->Text = L"B";
 			// 
 			// cToolStripMenuItem1
 			// 
 			this->cToolStripMenuItem1->Name = L"cToolStripMenuItem1";
-			this->cToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->cToolStripMenuItem1->Size = System::Drawing::Size(85, 22);
 			this->cToolStripMenuItem1->Text = L"C";
 			// 
 			// dToolStripMenuItem1
 			// 
 			this->dToolStripMenuItem1->Name = L"dToolStripMenuItem1";
-			this->dToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->dToolStripMenuItem1->Size = System::Drawing::Size(85, 22);
 			this->dToolStripMenuItem1->Text = L"D";
 			// 
 			// eToolStripMenuItem1
 			// 
 			this->eToolStripMenuItem1->Name = L"eToolStripMenuItem1";
-			this->eToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->eToolStripMenuItem1->Size = System::Drawing::Size(85, 22);
 			this->eToolStripMenuItem1->Text = L"E";
 			// 
 			// fToolStripMenuItem1
 			// 
 			this->fToolStripMenuItem1->Name = L"fToolStripMenuItem1";
-			this->fToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->fToolStripMenuItem1->Size = System::Drawing::Size(85, 22);
 			this->fToolStripMenuItem1->Text = L"F";
 			// 
 			// gToolStripMenuItem1
 			// 
 			this->gToolStripMenuItem1->Name = L"gToolStripMenuItem1";
-			this->gToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->gToolStripMenuItem1->Size = System::Drawing::Size(85, 22);
 			this->gToolStripMenuItem1->Text = L"G";
 			// 
 			// hToolStripMenuItem1
 			// 
 			this->hToolStripMenuItem1->Name = L"hToolStripMenuItem1";
-			this->hToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->hToolStripMenuItem1->Size = System::Drawing::Size(85, 22);
 			this->hToolStripMenuItem1->Text = L"H";
 			// 
 			// iToolStripMenuItem1
 			// 
 			this->iToolStripMenuItem1->Name = L"iToolStripMenuItem1";
-			this->iToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->iToolStripMenuItem1->Size = System::Drawing::Size(85, 22);
 			this->iToolStripMenuItem1->Text = L"I";
 			// 
 			// jToolStripMenuItem1
 			// 
 			this->jToolStripMenuItem1->Name = L"jToolStripMenuItem1";
-			this->jToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->jToolStripMenuItem1->Size = System::Drawing::Size(85, 22);
 			this->jToolStripMenuItem1->Text = L"J";
 			// 
 			// kToolStripMenuItem1
 			// 
 			this->kToolStripMenuItem1->Name = L"kToolStripMenuItem1";
-			this->kToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->kToolStripMenuItem1->Size = System::Drawing::Size(85, 22);
 			this->kToolStripMenuItem1->Text = L"K";
 			// 
 			// lToolStripMenuItem1
 			// 
 			this->lToolStripMenuItem1->Name = L"lToolStripMenuItem1";
-			this->lToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->lToolStripMenuItem1->Size = System::Drawing::Size(85, 22);
 			this->lToolStripMenuItem1->Text = L"L";
 			// 
 			// mToolStripMenuItem1
 			// 
 			this->mToolStripMenuItem1->Name = L"mToolStripMenuItem1";
-			this->mToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->mToolStripMenuItem1->Size = System::Drawing::Size(85, 22);
 			this->mToolStripMenuItem1->Text = L"M";
 			// 
 			// nToolStripMenuItem1
 			// 
 			this->nToolStripMenuItem1->Name = L"nToolStripMenuItem1";
-			this->nToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->nToolStripMenuItem1->Size = System::Drawing::Size(85, 22);
 			this->nToolStripMenuItem1->Text = L"N";
 			// 
 			// oToolStripMenuItem1
 			// 
 			this->oToolStripMenuItem1->Name = L"oToolStripMenuItem1";
-			this->oToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->oToolStripMenuItem1->Size = System::Drawing::Size(85, 22);
 			this->oToolStripMenuItem1->Text = L"O";
 			// 
 			// pToolStripMenuItem1
 			// 
 			this->pToolStripMenuItem1->Name = L"pToolStripMenuItem1";
-			this->pToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->pToolStripMenuItem1->Size = System::Drawing::Size(85, 22);
 			this->pToolStripMenuItem1->Text = L"P";
 			// 
 			// qToolStripMenuItem1
 			// 
 			this->qToolStripMenuItem1->Name = L"qToolStripMenuItem1";
-			this->qToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->qToolStripMenuItem1->Size = System::Drawing::Size(85, 22);
 			this->qToolStripMenuItem1->Text = L"Q";
 			// 
 			// rToolStripMenuItem1
 			// 
 			this->rToolStripMenuItem1->Name = L"rToolStripMenuItem1";
-			this->rToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->rToolStripMenuItem1->Size = System::Drawing::Size(85, 22);
 			this->rToolStripMenuItem1->Text = L"R";
 			// 
 			// sToolStripMenuItem1
 			// 
 			this->sToolStripMenuItem1->Name = L"sToolStripMenuItem1";
-			this->sToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->sToolStripMenuItem1->Size = System::Drawing::Size(85, 22);
 			this->sToolStripMenuItem1->Text = L"S";
 			// 
 			// tToolStripMenuItem1
 			// 
 			this->tToolStripMenuItem1->Name = L"tToolStripMenuItem1";
-			this->tToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->tToolStripMenuItem1->Size = System::Drawing::Size(85, 22);
 			this->tToolStripMenuItem1->Text = L"T";
 			// 
 			// uToolStripMenuItem1
 			// 
 			this->uToolStripMenuItem1->Name = L"uToolStripMenuItem1";
-			this->uToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->uToolStripMenuItem1->Size = System::Drawing::Size(85, 22);
 			this->uToolStripMenuItem1->Text = L"U";
 			// 
 			// vToolStripMenuItem1
 			// 
 			this->vToolStripMenuItem1->Name = L"vToolStripMenuItem1";
-			this->vToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->vToolStripMenuItem1->Size = System::Drawing::Size(85, 22);
 			this->vToolStripMenuItem1->Text = L"V";
 			// 
 			// wToolStripMenuItem1
 			// 
 			this->wToolStripMenuItem1->Name = L"wToolStripMenuItem1";
-			this->wToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->wToolStripMenuItem1->Size = System::Drawing::Size(85, 22);
 			this->wToolStripMenuItem1->Text = L"W";
 			// 
 			// xToolStripMenuItem1
 			// 
 			this->xToolStripMenuItem1->Name = L"xToolStripMenuItem1";
-			this->xToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->xToolStripMenuItem1->Size = System::Drawing::Size(85, 22);
 			this->xToolStripMenuItem1->Text = L"X";
 			// 
 			// yToolStripMenuItem1
 			// 
 			this->yToolStripMenuItem1->Name = L"yToolStripMenuItem1";
-			this->yToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->yToolStripMenuItem1->Size = System::Drawing::Size(85, 22);
 			this->yToolStripMenuItem1->Text = L"Y";
 			// 
 			// zToolStripMenuItem1
 			// 
 			this->zToolStripMenuItem1->Name = L"zToolStripMenuItem1";
-			this->zToolStripMenuItem1->Size = System::Drawing::Size(152, 22);
+			this->zToolStripMenuItem1->Size = System::Drawing::Size(85, 22);
 			this->zToolStripMenuItem1->Text = L"Z";
 			// 
 			// promedioPToolStripMenuItem1
@@ -1234,6 +1239,7 @@ private: System::Windows::Forms::Label^  lblNombre8;
 			this->mayorNotaAMenorToolStripMenuItem->Name = L"mayorNotaAMenorToolStripMenuItem";
 			this->mayorNotaAMenorToolStripMenuItem->Size = System::Drawing::Size(182, 22);
 			this->mayorNotaAMenorToolStripMenuItem->Text = L"Mayor nota a menor";
+			this->mayorNotaAMenorToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm::mayorNotaAMenorToolStripMenuItem_Click);
 			// 
 			// menorNotaAMayorToolStripMenuItem
 			// 
@@ -1326,10 +1332,20 @@ private: System::Windows::Forms::Label^  lblNombre8;
 	
 	
 
+		void imprimir() {
+			lblPP1->Text = gcnew String(lista[0]->getPromedioPonderado() + "");
+			lblPP2->Text = gcnew String(lista[1]->getPromedioPonderado() + "");
+			lblPP3->Text = gcnew String(lista[2]->getPromedioPonderado() + "");
+			lblPP4->Text = gcnew String(lista[3]->getPromedioPonderado() + "");
+			lblPP5->Text = gcnew String(lista[4]->getPromedioPonderado() + "");
+			lblPP6->Text = gcnew String(lista[5]->getPromedioPonderado() + "");
+		}
 
 
 
 
-
+private: System::Void mayorNotaAMenorToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
+	imprimir();
+}
 };
 }

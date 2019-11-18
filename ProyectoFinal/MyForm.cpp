@@ -54,7 +54,6 @@ int main() {
 
 	///////////////////////////AREA DE TESTEO
 
-	ArbolAVL* arbol = new ArbolAVL();
 	Alumno* alumno1 = new Alumno("Abcdef", 15.6, 3050.2, 19, 4, 1500.5, 3);
 	Alumno* alumno2 = new Alumno("bcdefa", 14.0,      0, 23, 4, 1500.5, 3);
 	Alumno* alumno3 = new Alumno("cdefab", 12.2, 1050.2, 20, 4, 1500.5, 3);
@@ -64,7 +63,15 @@ int main() {
 	Alumno* alumno7 = new Alumno("ghijkl", 13.4,      0, 17, 4, 1500.5, 3);
 	Alumno* alumno8 = new Alumno("hijklg", 15.1, 4050.5, 23, 4, 1500.5, 3);
 
-	Alumno* alumno[8] = { alumno1, alumno2, alumno3, alumno4, alumno5, alumno6, alumno7, alumno8 };
+	Alumno** lista = new Alumno*[8]();
+	lista[0] = alumno1;
+	lista[1] = alumno2;
+	lista[2] = alumno3;
+	lista[3] = alumno4;
+	lista[4] = alumno5;
+	lista[5] = alumno6;
+	lista[6] = alumno7;
+	lista[7] = alumno8;
 
 
 
@@ -73,7 +80,7 @@ int main() {
 
 
 
-	Application::Run(gcnew MyForm);
+	Application::Run(gcnew MyForm(lista));
 
 	return 0;
 }
