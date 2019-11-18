@@ -13,7 +13,8 @@
 #include <filesystem>
 #include <string>
 
-#include <list>
+#include <vector>
+//#include <list>
 
 using namespace std;
 using namespace std::experimental::filesystem;
@@ -27,7 +28,7 @@ public:
 	string RutaFija = "RutaFija.txt";
 
 	string ruta = "C:\\Users\\Juan\\Desktop\\UPC\\TercerCiclo\\Algoritmo\\TrabajoFinal\\Algoritmo_Final\\Debug";
-	list<Archivo>* alumnos = new list<Archivo>();
+	vector<Archivo>* alumnos = new vector<Archivo>();
 
 	
 
