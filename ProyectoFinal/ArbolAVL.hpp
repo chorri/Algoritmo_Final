@@ -80,6 +80,23 @@ private:
 	}
 
 	////////////////////////////insertar
+	bool _insertar(Nodo*& nodo, Alumno* alumno) {
+		if (nodo == nullptr) {
+			nodo = new Nodo(alumno);
+			nodo->alumno = alumno;
+		}
+		else if (alumno < nodo->alumno) {
+			_insertar(nodo->izq, alumno);
+		}
+		else if (alumno > nodo->alumno) {
+			_insertar(nodo->der, alumno);
+		}
+
+		_balancear(nodo); //Proceso de balanceo del arbol
+
+		return true;
+	}
+
 	bool _insertarSegunPromedio(Nodo*& nodo, Alumno* alumno) {
 		if (nodo == nullptr) {
 			nodo = new Nodo(alumno);
@@ -162,6 +179,7 @@ private:
 	}
 
 	////////////////////////////////////eliminar
+	//void _Eliminar 
 
 	
 public:
@@ -179,10 +197,29 @@ public:
 		return _Altura(raiz);
 	}
 
+	void insertar(Alumno* alumno) {
+		_insertar(raiz, alumno);
+	}
+
 	/*bool Eliminar(Alumno* alumno) {
 		return _Eliminar(raiz, alumno);
 	}*/
 
+	bool insertarSegunPromedio(Alumno* alumno) {
+		_insertarSegunPromedio(raiz, alumno);
+	}
+	bool insertarSegunDeuda(Alumno* alumno) {
+		_insertarSegunDeuda(raiz, alumno);
+	}
+	bool insertarSegunPeso(Alumno* alumno) {
+		_insertarSegunPeso(raiz, alumno);
+	}
+	bool insertarSegunFecha(Alumno* alumno) {
+		_insertarSegunFecha(raiz, alumno);
+	}
+	bool insertarSegunNombre(Alumno* alumno) {
+		_insertarSegunNombre(raiz, alumno);
+	}
 
 };
 
