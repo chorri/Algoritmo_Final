@@ -18,7 +18,6 @@
 using namespace std;
 using namespace std::experimental::filesystem;
 
-
 class MainProgramManager
 {
 public:
@@ -48,7 +47,6 @@ public:
 		else {
 			ruta = string((std::istreambuf_iterator<char>(lector)), std::istreambuf_iterator<char>());
 
-			cout << "@@@" << ruta << "@@@";
 			CargarPrograma();
 		}
 		lector.close();
@@ -66,21 +64,32 @@ public:
 
 		//Usando la ruta conseguimos la información de los archivos y la agregamos a los alumnos
 		for (const auto& entry : directory_iterator(ruta)) {
+			//Checkear SOLO txt
+			if (entry.path().extension().string() == ".txt") {
+				GetFileAttributesEx(entry.path().c_str(), GetFileExInfoStandard, &datos);
 
-			GetFileAttributesEx(entry.path().c_str(), GetFileExInfoStandard, &datos);
+				std::stringstream sstr;
+				sstr << datos.nFileSizeLow;
+				std::string str = sstr.str();
 
-			std::stringstream sstr;
-			sstr << datos.nFileSizeLow;
-			std::string str = sstr.str();
+				auto ftime = std::experimental::filesystem::last_write_time(ruta);
+				std::time_t cftime = decltype(ftime)::clock::to_time_t(ftime);
 
-			auto ftime = std::experimental::filesystem::last_write_time(ruta);
-			std::time_t cftime = decltype(ftime)::clock::to_time_t(ftime);
+				ifstream lector(entry.path(), ios::in);
 
-			Archivo temp = Archivo(entry.path().filename().string(), stoi(str, nullptr, 10), cftime);
+				string _nombre;
+				float promedio, deuda, _mensualidad;
+				short _edad, _ciclo;
+				int _peso;
 
-			//Cargar informacion de alumno
-
-			alumnos->push_back(temp);
+				//Cargar informacion de alumno
+				while (lector >> _nombre >> promedio >> deuda >> _edad >> _ciclo >> _mensualidad >> _peso)
+				{
+					Alumno* alumn = new Alumno(_nombre, promedio, deuda, _edad, _ciclo, _mensualidad, _peso);
+					Archivo temp = Archivo(entry.path().filename().string(), stoi(str, nullptr, 10), cftime, alumn);
+					alumnos->push_back(temp);
+				}
+			}
 		}
 	}
 

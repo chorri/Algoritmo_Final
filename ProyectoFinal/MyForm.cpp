@@ -32,11 +32,16 @@ int main() {
 	MainProgramManager mainmanage = MainProgramManager();
 	cout << mainmanage.alumnos->size();
 
-	string path = "C:\\Users\\Juan\\Desktop\\UPC\\TercerCiclo\\Algoritmo\\TrabajoFinal\\Algoritmo_Final\\ProyectoFinal\\Debug\\ProyectoFinal.tlog";
+	/*string path = "C:\\Users\\Juan\\Desktop\\UPC\\TercerCiclo\\Algoritmo\\TrabajoFinal\\Algoritmo_Final\\Debug";
 	for (const auto& entry : directory_iterator(path)) {
+
+		if (entry.path().extension().string() == ".txt") {
+
+		}
+		
 		cout << "- ";
 		//cout << entry.path() << std::endl;
-		
+
 		GetFileAttributesEx(entry.path().c_str(), GetFileExInfoStandard, &dat);
 		
 		std::stringstream sstr;
@@ -54,9 +59,14 @@ int main() {
 
 	cout << "test" << endl;
 
-
+	*/
 	///////////////////////////AREA DE TESTEO
 
+	Alumno** lista = new Alumno*[8]();
+
+	int i = 0;
+
+	
 	Alumno* alumno1 = new Alumno("Abbcdefa", 15.6, 3050.2, 19, 4, 1500.5, 3);
 	Alumno* alumno2 = new Alumno("Defabc", 14.0,      0, 23, 4, 1500.5, 1);
 	Alumno* alumno3 = new Alumno("Cdefab", 12.2, 1050.2, 20, 4, 1500.5, 2);
@@ -66,7 +76,6 @@ int main() {
 	Alumno* alumno7 = new Alumno("Hijklg", 13.4,      0, 17, 4, 1500.5, 7);
 	Alumno* alumno8 = new Alumno("Efabcd", 15.1, 4050.5, 23, 4, 1500.5, 6);
 
-	Alumno** lista = new Alumno*[8]();
 	lista[0] = alumno1;
 	lista[1] = alumno2;
 	lista[2] = alumno3;
