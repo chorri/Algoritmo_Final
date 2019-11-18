@@ -83,12 +83,14 @@ public:
 				int _peso;
 
 				//Cargar informacion de alumno
-				while (lector >> _nombre >> promedio >> deuda >> _edad >> _ciclo >> _mensualidad >> _peso)
-				{
-					Alumno* alumn = new Alumno(_nombre, promedio, deuda, _edad, _ciclo, _mensualidad, _peso);
-					Archivo temp = Archivo(entry.path().filename().string(), stoi(str, nullptr, 10), cftime, alumn);
-					alumnos->push_back(temp);
-				}
+				lector >> _nombre >> promedio >> deuda >> _edad >> _ciclo >> _mensualidad >> _peso;
+				
+				Alumno* alumn = new Alumno(_nombre, promedio, deuda, _edad, _ciclo, _mensualidad, _peso);
+				Archivo temp = Archivo(entry.path().filename().string(), stoi(str, nullptr, 10), cftime, alumn);
+				alumnos->push_back(temp);
+
+					
+				
 			}
 		}
 	}
