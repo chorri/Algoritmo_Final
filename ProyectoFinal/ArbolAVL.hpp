@@ -195,6 +195,20 @@ private:
 
 		return true;
 	}
+	bool _insertarSegunPesoIgual(Nodo*& nodo, Alumno* alumno, int numero) {
+		if (nodo == nullptr) {
+			nodo = new Nodo(alumno);
+			nodo->alumno = alumno;
+		}
+		else if (alumno->getPeso() == numero) {
+			_insertarSegunPesoIgual(nodo->izq, alumno, numero);
+		}
+		else
+			_insertarSegunPesoIgual(nodo->der, alumno, numero);
+		_balancear(nodo); //Proceso de balanceo del arbol
+
+		return true;
+	}
 
 	string _siguienteLetra(string letra) {
 		if (letra == "A") return "B";
@@ -282,6 +296,9 @@ public:
 	}
 	string SiguienteLetra(string letra) {
 		return _siguienteLetra(letra);
+	}
+	void insertarSegunPesoIgual(Alumno* alumno, int numero) {
+		_insertarSegunPesoIgual(raiz, alumno, numero);
 	}
 
 };
