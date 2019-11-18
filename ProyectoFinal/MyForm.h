@@ -1320,6 +1320,7 @@ private: System::Windows::Forms::Label^  lblNombre8;
 			this->MainMenuStrip = this->OpcMSrp;
 			this->Name = L"MyForm";
 			this->Text = L"MyForm";
+			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
 			this->ArchivosPnl->ResumeLayout(false);
 			this->ArchivosPnl->PerformLayout();
 			this->OpcMSrp->ResumeLayout(false);
@@ -1333,18 +1334,53 @@ private: System::Windows::Forms::Label^  lblNombre8;
 	
 
 		void imprimir() {
+			//Nombre
+			lblNombre1->Text = gcnew String(lista[0]->getNombre().c_str());
+			lblNombre2->Text = gcnew String(lista[1]->getNombre().c_str());
+			lblNombre3->Text = gcnew String(lista[2]->getNombre().c_str());
+			lblNombre4->Text = gcnew String(lista[3]->getNombre().c_str());
+			lblNombre5->Text = gcnew String(lista[4]->getNombre().c_str());
+			lblNombre6->Text = gcnew String(lista[5]->getNombre().c_str());
+			lblNombre7->Text = gcnew String(lista[6]->getNombre().c_str());
+			lblNombre8->Text = gcnew String(lista[7]->getNombre().c_str());
+			//Promedio Ponderado
 			lblPP1->Text = gcnew String(lista[0]->getPromedioPonderado() + "");
 			lblPP2->Text = gcnew String(lista[1]->getPromedioPonderado() + "");
 			lblPP3->Text = gcnew String(lista[2]->getPromedioPonderado() + "");
 			lblPP4->Text = gcnew String(lista[3]->getPromedioPonderado() + "");
 			lblPP5->Text = gcnew String(lista[4]->getPromedioPonderado() + "");
 			lblPP6->Text = gcnew String(lista[5]->getPromedioPonderado() + "");
+			lblPP7->Text = gcnew String(lista[6]->getPromedioPonderado() + "");
+			lblPP8->Text = gcnew String(lista[7]->getPromedioPonderado() + "");
+			//Deuda Pendiente
+			lblDP1->Text = gcnew String(lista[0]->getDeudaPendiente() + "");
+			lblDP2->Text = gcnew String(lista[1]->getDeudaPendiente() + "");
+			lblDP3->Text = gcnew String(lista[2]->getDeudaPendiente() + "");
+			lblDP4->Text = gcnew String(lista[3]->getDeudaPendiente() + "");
+			lblDP5->Text = gcnew String(lista[4]->getDeudaPendiente() + "");
+			lblDP6->Text = gcnew String(lista[5]->getDeudaPendiente() + "");
+			lblDP7->Text = gcnew String(lista[6]->getDeudaPendiente() + "");
+			lblDP8->Text = gcnew String(lista[7]->getDeudaPendiente() + "");
+			//Peso
+			lblPeso1->Text = gcnew String(lista[0]->getPeso() + "");
+			lblPeso2->Text = gcnew String(lista[1]->getPeso() + "");
+			lblPeso3->Text = gcnew String(lista[2]->getPeso() + "");
+			lblPeso4->Text = gcnew String(lista[3]->getPeso() + "");
+			lblPeso5->Text = gcnew String(lista[4]->getPeso() + "");
+			lblPeso6->Text = gcnew String(lista[5]->getPeso() + "");
+			lblPeso7->Text = gcnew String(lista[6]->getPeso() + "");
+			lblPeso8->Text = gcnew String(lista[7]->getPeso() + "");
+			//Fecha
+
 		}
 
 
 
 
 private: System::Void mayorNotaAMenorToolStripMenuItem_Click(System::Object^  sender, System::EventArgs^  e) {
+	///////////
+}
+private: System::Void MyForm_Load(System::Object^  sender, System::EventArgs^  e) {
 	imprimir();
 }
 };
