@@ -51,6 +51,7 @@ int main() {
 
 	cout << "test" << endl;
 
+
 	///////////////////////////AREA DE TESTEO
 
 	ArbolAVL* arbol = new ArbolAVL();
@@ -64,7 +65,6 @@ int main() {
 	Alumno* alumno8 = new Alumno("hijklg", 15.1, 4050.5, 23, 4, 1500.5, 3);
 
 	Alumno* alumno[8] = { alumno1, alumno2, alumno3, alumno4, alumno5, alumno6, alumno7, alumno8 };
-
 
 
 
