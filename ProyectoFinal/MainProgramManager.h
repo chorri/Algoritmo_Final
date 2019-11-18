@@ -37,8 +37,11 @@ public:
 			std::stringstream sstr;
 			sstr << datos.nFileSizeLow;
 			std::string str = sstr.str();
+			
+			auto ftime = std::experimental::filesystem::last_write_time(ruta);
+			std::time_t cftime = decltype(ftime)::clock::to_time_t(ftime);
 
-			Archivo temp = Archivo(entry.path().filename, stoi(str, nullptr, 10));
+			Archivo temp = Archivo(entry.path().filename, stoi(str, nullptr, 10),cftime);
 
 			//Cargar informacion de alumno
 

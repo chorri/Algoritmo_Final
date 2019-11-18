@@ -2,6 +2,7 @@
 #define __ALUMNO_HPP__
 #include <iostream>
 #include <string>
+#include <Windows.h>
 
 using namespace std;
 
@@ -59,13 +60,19 @@ public:
 	Alumno alumnoAsignado;
 	string nombreDelArchivo;
 	unsigned int peso;
+	time_t uEdicion;
 
-	Archivo(string n, unsigned int p) {
+	Archivo(string n, unsigned int p,time_t uE) {
 		nombreDelArchivo = n;
 		peso = p;
+		uEdicion = uE;
 	}
 	~Archivo() {
 
+	}
+
+	long int GetTimeAsNumber() {
+		return static_cast<long int>(uEdicion);
 	}
 
 private:
