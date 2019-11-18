@@ -52,4 +52,23 @@ public:
 
 
 
+
+class Archivo
+{
+public:
+	Alumno alumnoAsignado;
+	string nombreDelArchivo;
+	unsigned int peso;
+
+	Archivo(string n, unsigned int p) {
+		nombreDelArchivo = n;
+		peso = p;
+	}
+	~Archivo() {
+
+	}
+
+private:
+
+};
 #endif
