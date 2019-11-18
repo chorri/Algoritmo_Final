@@ -4,6 +4,7 @@
 #include "NodoAVL.hpp"
 #include <functional>
 
+
 class ArbolAVL
 {
 private:
@@ -80,6 +81,18 @@ private:
 	}
 
 	////////////////////////////insertar
+	bool _insertar(Nodo*& nodo, Alumno* alumno) {
+		if (nodo == nullptr) {
+			nodo = new Nodo(alumno);
+			nodo->alumno = alumno;
+		}
+		
+		_insertar(nodo->der, alumno);
+		_balancear(nodo); //Proceso de balanceo del arbol
+
+		return true;
+	}
+
 	bool _insertarSegunPromedio(Nodo*& nodo, Alumno* alumno) {
 		if (nodo == nullptr) {
 			nodo = new Nodo(alumno);
@@ -161,7 +174,19 @@ private:
 		return true;
 	}
 
-	////////////////////////////////////filtrar
+	////////////////////////////////////eliminar
+
+	//void _Eliminar 
+
+
+	void _eliminar(Nodo*& nodo) {
+		if (nodo != nullptr) {
+			_eliminar(nodo->izq);
+			_eliminar(nodo->der);
+			nodo = nullptr;
+		}
+	}
+
 	
 public:
 	ArbolAVL(){}
@@ -178,10 +203,29 @@ public:
 		return _Altura(raiz);
 	}
 
+	void insertar(Alumno* alumno) {
+		_insertar(raiz, alumno);
+	}
+
 	/*bool Eliminar(Alumno* alumno) {
 		return _Eliminar(raiz, alumno);
 	}*/
 
+	bool insertarSegunPromedio(Alumno* alumno) {
+		_insertarSegunPromedio(raiz, alumno);
+	}
+	bool insertarSegunDeuda(Alumno* alumno) {
+		_insertarSegunDeuda(raiz, alumno);
+	}
+	bool insertarSegunPeso(Alumno* alumno) {
+		_insertarSegunPeso(raiz, alumno);
+	}
+	bool insertarSegunFecha(Alumno* alumno) {
+		_insertarSegunFecha(raiz, alumno);
+	}
+	bool insertarSegunNombre(Alumno* alumno) {
+		_insertarSegunNombre(raiz, alumno);
+	}
 
 };
 
