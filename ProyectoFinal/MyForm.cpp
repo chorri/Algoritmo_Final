@@ -1,4 +1,4 @@
-
+#include "MainManagers.h"
 #include "MyForm.h"
 #include <iostream>
 
@@ -29,6 +29,9 @@ void eraseSubStr(std::string & mainStr, const std::string & toErase)
 
 
 int main() {
+	MainProgramManager mainmanage = MainProgramManager();
+	cout << mainmanage.alumnos->size();
+
 	string path = "C:\\Users\\Juan\\Desktop\\UPC\\TercerCiclo\\Algoritmo\\TrabajoFinal\\Algoritmo_Final\\ProyectoFinal\\Debug\\ProyectoFinal.tlog";
 	for (const auto& entry : directory_iterator(path)) {
 		cout << "- ";

@@ -59,10 +59,14 @@ class Archivo
 public:
 	Alumno alumnoAsignado;
 	string nombreDelArchivo;
-	unsigned int peso;
+	int peso;
 	time_t uEdicion;
 
-	Archivo(string n, unsigned int p,time_t uE) {
+	Archivo() {
+		nombreDelArchivo = "";
+		peso = 0;
+	}
+	Archivo(string n, int p,time_t uE) {
 		nombreDelArchivo = n;
 		peso = p;
 		uEdicion = uE;
