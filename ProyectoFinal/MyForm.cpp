@@ -32,8 +32,9 @@ int main() {
 	MainProgramManager* mainmanage = new MainProgramManager();
 	cout << mainmanage->alumnos->size();
 
-	/*string path = "C:\\Users\\Juan\\Desktop\\UPC\\TercerCiclo\\Algoritmo\\TrabajoFinal\\Algoritmo_Final\\Debug";
-	for (const auto& entry : directory_iterator(path)) {
+	
+	//string path = "C:\\Users\\Juan\\Desktop\\UPC\\TercerCiclo\\Algoritmo\\TrabajoFinal\\Algoritmo_Final\\Debug";
+	for (const auto& entry : directory_iterator(mainmanage->ruta)) {
 
 		if (entry.path().extension().string() == ".txt") {
 
@@ -48,9 +49,9 @@ int main() {
 		sstr << dat.nFileSizeLow;
 		std::string str = sstr.str();
 
-		//cout << endl << entry.path().filename() << endl;
+		cout << endl << entry.path().filename() << endl;
 
-		//eraseSubStr(entry.path().string(), path);
+		eraseSubStr(entry.path().string(), mainmanage->ruta);
 
 		
 
@@ -59,7 +60,6 @@ int main() {
 
 	cout << "test" << endl;
 
-	*/
 	///////////////////////////AREA DE TESTEO
 
 	Alumno** lista = new Alumno*[8]();
@@ -94,7 +94,7 @@ int main() {
 
 
 
-	Application::Run(gcnew MyForm(lista,mainmanage));
+	Application::Run(gcnew MyForm(lista));
 
 	return 0;
 }

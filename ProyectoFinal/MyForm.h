@@ -16,7 +16,7 @@ namespace ProyectoFinal {
 	public ref class MyForm : public System::Windows::Forms::Form
 	{
 	public:
-		MyForm(Alumno** lista,MainProgramManager* main)
+		MyForm(Alumno** lista)
 		{
 			InitializeComponent();
 			//
@@ -258,7 +258,6 @@ private: System::Windows::Forms::Label^  lblNombre8;
 		/// Variable del diseñador necesaria.
 		ArbolAVL* arbol;
 		Alumno** lista;
-		public: MainProgramManager* mainProgram;
 private: System::Windows::Forms::Button^  btnReestablecer;
 
 

@@ -25,8 +25,10 @@ public:
 
 	WIN32_FILE_ATTRIBUTE_DATA datos;
 
+	//Ruta fija ubicada en la carpeta del proyecto
 	string RutaFija = "RutaFija.txt";
 
+	//Variable de tipo ruta que se sobrescribe cuando se crea la instancia del objeto
 	string ruta = "C:\\Users\\Juan\\Desktop\\UPC\\TercerCiclo\\Algoritmo\\TrabajoFinal\\Algoritmo_Final\\Debug";
 	vector<Archivo>* alumnos = new vector<Archivo>();
 
@@ -49,7 +51,7 @@ public:
 			ruta = string((std::istreambuf_iterator<char>(lector)), std::istreambuf_iterator<char>());
 
 			CargarPrograma();
-		}
+		}	 
 		lector.close();
 		
 	}
