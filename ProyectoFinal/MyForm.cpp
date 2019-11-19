@@ -29,8 +29,8 @@ void eraseSubStr(std::string & mainStr, const std::string & toErase)
 
 
 int main() {
-	MainProgramManager mainmanage = MainProgramManager();
-	cout << mainmanage.alumnos->size();
+	MainProgramManager* mainmanage = new MainProgramManager();
+	cout << mainmanage->alumnos->size();
 
 	/*string path = "C:\\Users\\Juan\\Desktop\\UPC\\TercerCiclo\\Algoritmo\\TrabajoFinal\\Algoritmo_Final\\Debug";
 	for (const auto& entry : directory_iterator(path)) {
@@ -64,9 +64,9 @@ int main() {
 
 	Alumno** lista = new Alumno*[8]();
 
-	for (int i = 0; i < mainmanage.alumnos->size(); i++)
+	for (int i = 0; i < mainmanage->alumnos->size(); i++)
 	{
-		lista[i] = mainmanage.alumnos->at(i).alumnoAsignado;
+		lista[i] = mainmanage->alumnos->at(i).alumnoAsignado;
 	}
 	
 	//Alumno* alumno1 = new Alumno("Abbcdefa", 15.6, 3050.2, 19, 4, 1500.5, 3);
@@ -94,7 +94,7 @@ int main() {
 
 
 
-	Application::Run(gcnew MyForm(lista));
+	Application::Run(gcnew MyForm(lista,mainmanage));
 
 	return 0;
 }

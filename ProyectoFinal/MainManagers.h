@@ -57,7 +57,7 @@ public:
 	}
 
 	void EditarRuta(string str) {
-		ruta = str;
+		//ruta = str;
 		CargarRuta();
 	}
 
